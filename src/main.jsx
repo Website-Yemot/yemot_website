@@ -5,6 +5,6 @@ import App from './App.jsx'
 import { Frame } from './Frames.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Frame></Frame>
+     <App />
   </StrictMode>,
 )
