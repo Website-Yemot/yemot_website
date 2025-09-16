@@ -1,10 +1,10 @@
 import React from "react";
-import './framebarp.css'
+import './benefits.css'
 import './styleguide.css'
 
-export const FramePurple = () => {
+export const Benefits = () => {
   return (<>
-<div className="frame2">
+<div className="benefits">
 <div className="div">
 <div className="div-2">
 <div className="text-wrapper">US Support</div>

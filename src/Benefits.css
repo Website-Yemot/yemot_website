@@ -1,5 +1,5 @@
 
-.frame2 .div {
+.benefits .div {
 align-items: center;
 margin: 0 auto;
 background-color: var( --brandcolor-brand-tertiary-100);
@@ -12,7 +12,7 @@ position: relative;
 width: 800px;
 top:-60px}
 
-.frame2 .div-2 {
+.benefits .div-2 {
 align-items: flex-start;
 display: inline-flex;
 flex: 0 0 auto;
@@ -21,7 +21,7 @@ gap: 8px;
 justify-content: center;
 position: relative;}
 
-.frame2 .text-wrapper {
+.benefits .text-wrapper {
 color: var( --brandcolor-brand-black-white-black);
 font-family: "Poppins-SemiBold", Helvetica;
 font-size: 24px;
@@ -35,7 +35,7 @@ width: fit-content;
  margin: 0;
   padding: 0;}
 
-.frame2 .text-wrapper-2 {
+.benefits .text-wrapper-2 {
 color: var( --brandcolor-brand-grey-400);
 font-family: "Inter-Medium", Helvetica;
 font-size: 18px;
@@ -50,16 +50,16 @@ width: fit-content;
 
 
   /* דוגמה לרספונסיביות ל-bar */
-/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\framebarp.css */
+/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\benefits.css */
 @media (max-width: 900px) {
-  .frame2 .div {
+  .benefits .div {
     width: 98vw;
     padding: 24px 8vw;
     flex-direction: column;
     height: auto;
     gap: 16px;
   }
-  .frame2 .div-2 {
+  .benefits .div-2 {
     align-items: center;
     width: 100%;
     gap: 4px;
@@ -67,17 +67,17 @@ width: fit-content;
 }
 
 @media (max-width: 600px) {
-  .frame2 .div {
+  .benefits .div {
     width: 100vw;
     padding: 16px 2vw;
     border-radius: 12px;
     top: -20px;
   }
-  .frame2 .text-wrapper {
+  .benefits .text-wrapper {
     font-size: 16px;
     line-height: 20px;
   }
-  .frame2 .text-wrapper-2 {
+  .benefits .text-wrapper-2 {
     font-size: 12px;
     line-height: 16px;
   }

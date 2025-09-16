@@ -1,4 +1,4 @@
-.frame1 {
+.banner {
   width: 100vw;              
   background-color: #fafafa; 
   position: relative;
@@ -6,7 +6,7 @@
   margin-left: calc(50% - 50vw);
 }
 
-.frame1 .div {
+.banner .div {
   width: 1200px;             
   margin: 0 auto;
   display: flex;
@@ -16,7 +16,7 @@
   margin-top: 70px;
 }
 
-.frame1 .element-phones {
+.banner .element-phones {
  position: absolute;
   left: 54.1vw;
   top: 10.8vh;
@@ -27,7 +27,7 @@
   min-width: 200px;
   min-height: 150px;
 }
-/* .frame1 .element-phones {
+/* .banner .element-phones {
 height: 526px;
 left: 1038px;
 position: absolute;
@@ -36,7 +36,7 @@ width: 856px;
 max-width: 100%;
 height: auto;} */
 
-.frame1 .div-2 {
+.banner .div-2 {
   top:-22px;
 align-items: flex-start;
 display: flex;
@@ -49,7 +49,7 @@ flex-grow: 1;
 gap: 32px;
 position: relative;}
 
-.frame1 .div-3 {
+.banner .div-3 {
   flex: 1;                  
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@ position: relative;}
   
 }
 
-.frame1 .transform-your {
+.banner .transform-your {
   align-self: stretch;
   color: var(--brandcolor-brand-black-white-black);
   font-family: "Poppins-SemiBold", Helvetica;
@@ -71,7 +71,7 @@ position: relative;}
   text-align: left;   /* מיושר לשמאל */
 }
 
-.frame1 .build-powerful {
+.banner .build-powerful {
   align-self: stretch;
   color: var(--brandcolor-brand-grey-400);
   font-family: "Inter-Regular", Helvetica;
@@ -84,21 +84,21 @@ position: relative;}
   
 }
 
-.frame1 .text-wrapper {
+.banner .text-wrapper {
 color: #000000;}
 
-.frame1 .span {
+.banner .span {
 color: #8b3dff;}
 
-.frame1 .text-wrapper-2 {
+.banner .text-wrapper-2 {
 color: #76767e;}
 
-.frame1 .text-wrapper-3 {
+.banner .text-wrapper-3 {
 color: #000000;
 font-family: "Inter-SemiBold", Helvetica;
 font-weight: 600;}
 
-.frame1 .div-4 {
+.banner .div-4 {
 align-items: center;
 align-self: stretch;
 display: flex;
@@ -111,7 +111,7 @@ align-items: center;
 justify-content: center;   
 }
 
-.frame1 .div-wrapper {
+.banner .div-wrapper {
 background-color: var(--brandcolor-brand-primary-400);
 align-items: center;
 border-radius: 32px;
@@ -123,7 +123,7 @@ min-height: 20px; /* גובה מינימלי אחיד */
 padding: 18px 24px;
 position: relative;}
 
-.frame1 .p {
+.banner .p {
 color: #ffffff;
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
@@ -146,7 +146,7 @@ position: relative;
 white-space: nowrap;
 width: fit-content; */
 
-.frame1 .div-wrapper-2 {
+.banner .div-wrapper-2 {
 border-color: var(--brandcolor-brand-grey-200);
 align-items: center;
 border: 1px solid;
@@ -161,7 +161,7 @@ position: relative;}
 
 
 
-.frame1 .text-wrapper-4 {
+.banner .text-wrapper-4 {
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
@@ -176,7 +176,7 @@ width: fit-content;}
 
 
 
-.frame1 .image-wrapper {
+.banner .image-wrapper {
   flex: 1;
   border-radius: 26px;
   padding: 16px; 
@@ -195,7 +195,7 @@ width: fit-content;}
 
 }
 
-.frame1 .image {
+.banner .image {
 /* width: 560px;  
   height: auto;   */
 width:  100%;
@@ -211,19 +211,19 @@ width:  100%;
 
 
 /* דוגמה לרספונסיביות כללית */
-/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\Frame38.css */
+/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\Banner.css */
 @media (max-width: 900px) {
-  .frame1 .div {
+  .banner .div {
     width: 95vw;
     gap: 32px;
     flex-direction: column;
     align-items: center;
   }
-  .frame1 .image-wrapper {
+  .banner .image-wrapper {
     width: 100%;
     padding: 8px;
   }
-  .frame1 .element-phones {
+  .banner .element-phones {
     width: 90vw;
     max-width: 400px;
     height: auto;
@@ -236,33 +236,33 @@ width:  100%;
 }
 
 @media (max-width: 600px) {
-  .frame1 {
+  .banner {
     padding: 40px 0;
   }
-  .frame1 .div {
+  .banner .div {
     width: 100vw;
     gap: 16px;
     padding: 0 8px;
   }
-  .frame1 .transform-your {
+  .banner .transform-your {
     font-size: 32px;
   }
-  .frame1 .build-powerful {
+  .banner .build-powerful {
     font-size: 14px;
   }
-  .frame1 .div-4 {
+  .banner .div-4 {
     flex-direction: column;
     gap: 12px;
     margin-top: 0;
   }
   
-  .frame1 .image-wrapper {
+  .banner .image-wrapper {
     padding: 4px;
   }
 }
 
 @media (max-width: 900px) {
-  .frame1 .element-phones {
+  .banner .element-phones {
     position: static;
     width: 90vw;
     height: auto;

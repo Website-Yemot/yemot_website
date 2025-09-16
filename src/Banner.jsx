@@ -1,12 +1,12 @@
-import './Frame38.css'
+import './Banner.css'
 import './styleguide.css'
 import extenstionimage from "./Hero_Screen.png"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-export const Frame38 = () => {
+export const Banner = () => {
   return (
 
-<div className="frame1">
+<div className="banner">
 
 {/* <img className="element-phones" alt="Element phones" src={Phones} />  */}
 <DotLottieReact
