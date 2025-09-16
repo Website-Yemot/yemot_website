@@ -1,4 +1,4 @@
-import './DepthFrame.css';
+import './Demos.css';
 import './styleguide.css';
 import play from "./play.svg";
 
@@ -35,7 +35,7 @@ const items = [
   },
 ];
 
-export const DepthFrame = () => {
+export const Demos = () => {
   const firstRow = items.slice(0, 3);
   const secondRow = items.slice(3, 6);
 
@@ -61,7 +61,7 @@ export const DepthFrame = () => {
   );
 
   return (
-    <div className="depth-frame">
+    <div className="demos">
       <div className="div">
         <div className="build-any-phone-wrapper">
           <p className="build-any-phone">

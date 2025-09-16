@@ -6,7 +6,7 @@ import { Header } from './Header'
 import { Frame38 } from './Frame38'
 import { FramePurple } from './framebarp'
 import { Logos } from './Logos'
-import { DepthFrame } from './DepthFrame'
+import { Demos } from './Demos'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,7 +16,7 @@ function App() {
       <Frame38></Frame38>
       <FramePurple></FramePurple>
       <Logos></Logos>
-      <DepthFrame></DepthFrame>
+      <Demos></Demos>
       </>
   )
 }

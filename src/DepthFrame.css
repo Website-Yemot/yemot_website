@@ -1,5 +1,5 @@
 /* {backroung-gray} */
-.depth-frame {
+.demos {
 align-items: flex-start;
 display: flex;
 justify-content: center;
@@ -11,7 +11,7 @@ justify-content: center;
 
 }
 /* {div fo 3} */
-.depth-frame .div {
+.demos .div {
 align-items: center;
 display: flex;
 flex-direction: column;
@@ -23,7 +23,7 @@ height: auto;
     margin-top: -40px;
 }
 
-.depth-frame .build-any-phone-wrapper {
+.demos .build-any-phone-wrapper {
 align-items: center;
 display: flex;
 flex: 0 0 auto;
@@ -32,7 +32,7 @@ gap: 16px;
 position: relative;
 width: 720px;}
 
-.depth-frame .build-any-phone {
+.demos .build-any-phone {
 align-self: stretch;
 color: transparent;
 font-family: "Poppins-SemiBold", Helvetica;
@@ -44,10 +44,10 @@ margin-top: -1.00px;
 position: relative;
 text-align: center;}
 
-.depth-frame .text-wrapper {
+.demos .text-wrapper {
 color: #111416;}
 
-.depth-frame .span {
+.demos .span {
 color: #8b3dff;}
 
 
@@ -168,7 +168,7 @@ text-align: left;
 }
 
 
-/* .depth-frame {
+/* .demos {
 align-items: flex-start;
 background-color: #ffffff;
 border: 1px solid;
@@ -181,7 +181,7 @@ padding: 24px;
 position: relative;
 }
 
-.depth-frame .div {
+.demos .div {
 align-items: flex-start;
 align-self: stretch;
 display: flex;
@@ -192,7 +192,7 @@ padding: 0px 0px 24px;
 position: relative;
 width: 100%;}
 
-.depth-frame .text-wrapper {
+.demos .text-wrapper {
 align-self: stretch;
 color: #000000;
 font-family: "Poppins-SemiBold", Helvetica;
@@ -203,7 +203,7 @@ line-height: 20px;
 margin-top: -1.00px;
 position: relative;}
 
-.depth-frame .p {
+.demos .p {
 align-self: stretch;
 color: #607589;
 font-family: "Inter-Regular", Helvetica;
@@ -213,7 +213,7 @@ letter-spacing: 0;
 line-height: 21px;
 position: relative;}
 
-.depth-frame .div-2 {
+.demos .div-2 {
 align-items: center;
 align-self: stretch;
 background: linear-gradient(
@@ -236,7 +236,7 @@ padding: 14px;
 position: relative;
 width: 100%;}
 
-.depth-frame .frame {
+.demos .frame {
 align-items: center;
 background-color: #e3d1ff;
 border-radius: 4px;
@@ -246,7 +246,7 @@ gap: 10px;
 padding: 8px;
 position: relative;}
 
-.depth-frame .vector-wrapper {
+.demos .vector-wrapper {
 aspect-ratio: 1;
 background-image: url(./vector.svg);
 background-size: 100% 100%;
@@ -256,14 +256,14 @@ margin-top: -2047.00px;
 position: relative;
 width: 24px;}
 
-.depth-frame .vector {
+.demos .vector {
 height: 18px;
 left: 6px;
 position: absolute;
 top: 3px;
 width: 15px;
 
-.depth-frame .welcome-jessica-your-wrapper {
+.demos .welcome-jessica-your-wrapper {
 align-items: flex-start;
 display: flex;
 flex: 1;
@@ -271,7 +271,7 @@ flex-direction: column;
 flex-grow: 1;
 position: relative;}
 
-.depth-frame .welcome-jessica-your {
+.demos .welcome-jessica-your {
 align-self: stretch;
 color: #4300a5;
 font-family: "Inter-LightItalic", Helvetica;
