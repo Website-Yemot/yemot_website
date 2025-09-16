@@ -1,0 +1,274 @@
+.frame1 {
+  width: 100vw;              
+  background-color: #fafafa; 
+  position: relative;
+  padding: 160px 0;
+  margin-left: calc(50% - 50vw);
+}
+
+.frame1 .div {
+  width: 1200px;             
+  margin: 0 auto;
+  display: flex;
+  gap: 144px;
+  justify-content: center;
+  position: relative;
+  margin-top: 70px;
+}
+
+.frame1 .element-phones {
+ position: absolute;
+  left: 54.1vw;
+  top: 10.8vh;
+  width: 44.6vw;
+  height: 48.7vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  min-width: 200px;
+  min-height: 150px;
+}
+/* .frame1 .element-phones {
+height: 526px;
+left: 1038px;
+position: absolute;
+top: 128px;
+width: 856px;
+max-width: 100%;
+height: auto;} */
+
+.frame1 .div-2 {
+  top:-22px;
+align-items: flex-start;
+display: flex;
+flex: 1;
+ align-items: center;         /* מרכז אנכי */
+  justify-content: center;     /* מרכז אופקי */
+  position: relative;
+flex-direction: column;
+flex-grow: 1;
+gap: 32px;
+position: relative;}
+
+.frame1 .div-3 {
+  flex: 1;                  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+ align-items: center;    /* מרכז אופקי את כל התוכן */
+  justify-content: center;/* מרכז אנכי אם יש גובה קבוע */
+  
+}
+
+.frame1 .transform-your {
+  align-self: stretch;
+  color: var(--brandcolor-brand-black-white-black);
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;   
+  margin: 0;    
+  text-align: left;   /* מיושר לשמאל */
+}
+
+.frame1 .build-powerful {
+  align-self: stretch;
+  color: var(--brandcolor-brand-grey-400);
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;   
+  margin-top: 0px; 
+  text-align: left;   /* מיושר לשמאל */
+  
+}
+
+.frame1 .text-wrapper {
+color: #000000;}
+
+.frame1 .span {
+color: #8b3dff;}
+
+.frame1 .text-wrapper-2 {
+color: #76767e;}
+
+.frame1 .text-wrapper-3 {
+color: #000000;
+font-family: "Inter-SemiBold", Helvetica;
+font-weight: 600;}
+
+.frame1 .div-4 {
+align-items: center;
+align-self: stretch;
+display: flex;
+flex: 0 0 auto;
+gap: 26px;
+position: relative;
+width: 100%;
+margin-top: -40px;
+align-items: center;        
+justify-content: center;   
+}
+
+.frame1 .div-wrapper {
+background-color: var(--brandcolor-brand-primary-400);
+align-items: center;
+border-radius: 32px;
+display: inline-flex;
+flex: 0 0 auto;
+gap: 10px;
+justify-content: center;
+min-height: 20px; /* גובה מינימלי אחיד */
+padding: 18px 24px;
+position: relative;}
+
+.frame1 .p {
+color: #ffffff;
+font-family: "Inter-SemiBold", Helvetica;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0;
+line-height: 17.3px;
+margin-top: -1.00px;
+position: relative;
+white-space: nowrap;
+width: fit-content;}
+
+/* color: var(--brandcolor-brand-black-white-black);
+font-family: "Inter-SemiBold", Helvetica;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0;
+line-height: 17.3px;
+margin-top: -1.00px;
+position: relative;
+white-space: nowrap;
+width: fit-content; */
+
+.frame1 .div-wrapper-2 {
+border-color: var(--brandcolor-brand-grey-200);
+align-items: center;
+border: 1px solid;
+border-radius: 32px;
+display: inline-flex;
+flex: 0 0 auto;
+gap: 10px;
+justify-content: center;
+min-height: 20px; /* גובה מינימלי אחיד */
+padding: 18px 24px;
+position: relative;}
+
+
+
+.frame1 .text-wrapper-4 {
+color: var(--brandcolor-brand-black-white-black);
+font-family: "Inter-SemiBold", Helvetica;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0;
+line-height: 17.3px;
+margin-top: -1.00px;
+position: relative;
+white-space: nowrap;
+width: fit-content;}
+
+
+
+
+.frame1 .image-wrapper {
+  flex: 1;
+  border-radius: 26px;
+  padding: 16px; 
+  background: rgba(200, 200, 200, 0.15); 
+  border: 1px solid rgba(180, 180, 180, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  display: inline-block;
+  align-items: center;         /* מרכז אנכי */
+  justify-content: center;     /* מרכז אופקי */
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+.frame1 .image {
+/* width: 560px;  
+  height: auto;   */
+width:  100%;
+    margin: 0 auto;
+ align-items: center;         /* מרכז אנכי */
+  justify-content: center;     /* מרכז אופקי */
+  position: relative;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px; 
+  display: block;
+  border: none; }
+
+
+/* דוגמה לרספונסיביות כללית */
+/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\Frame38.css */
+@media (max-width: 900px) {
+  .frame1 .div {
+    width: 95vw;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frame1 .image-wrapper {
+    width: 100%;
+    padding: 8px;
+  }
+  .frame1 .element-phones {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    left: unset;
+    top: unset;
+    position: static;
+    margin: 0 auto 24px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame1 {
+    padding: 40px 0;
+  }
+  .frame1 .div {
+    width: 100vw;
+    gap: 16px;
+    padding: 0 8px;
+  }
+  .frame1 .transform-your {
+    font-size: 32px;
+  }
+  .frame1 .build-powerful {
+    font-size: 14px;
+  }
+  .frame1 .div-4 {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 0;
+  }
+  
+  .frame1 .image-wrapper {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .frame1 .element-phones {
+    position: static;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto 24px auto;
+    left: unset;
+    top: unset;
+    display: block;
+  }
+}

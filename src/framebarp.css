@@ -1,0 +1,84 @@
+
+.frame2 .div {
+align-items: center;
+margin: 0 auto;
+background-color: var( --brandcolor-brand-tertiary-100);
+border-radius: 24px;
+display: flex;
+height: 50px;
+justify-content: space-between;
+padding: 40px 120px;
+position: relative;
+width: 800px;
+top:-60px}
+
+.frame2 .div-2 {
+align-items: flex-start;
+display: inline-flex;
+flex: 0 0 auto;
+flex-direction: column;
+gap: 8px;
+justify-content: center;
+position: relative;}
+
+.frame2 .text-wrapper {
+color: var( --brandcolor-brand-black-white-black);
+font-family: "Poppins-SemiBold", Helvetica;
+font-size: 24px;
+font-weight: 600;
+letter-spacing: 0;
+line-height: 25px;
+margin-top: -1.00px;
+position: relative;
+white-space: nowrap;
+width: fit-content;
+ margin: 0;
+  padding: 0;}
+
+.frame2 .text-wrapper-2 {
+color: var( --brandcolor-brand-grey-400);
+font-family: "Inter-Medium", Helvetica;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 22px;
+position: relative;
+white-space: nowrap;
+width: fit-content;
+ margin: 0;
+  padding: 0;}
+
+
+  /* דוגמה לרספונסיביות ל-bar */
+/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\framebarp.css */
+@media (max-width: 900px) {
+  .frame2 .div {
+    width: 98vw;
+    padding: 24px 8vw;
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+  .frame2 .div-2 {
+    align-items: center;
+    width: 100%;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame2 .div {
+    width: 100vw;
+    padding: 16px 2vw;
+    border-radius: 12px;
+    top: -20px;
+  }
+  .frame2 .text-wrapper {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .frame2 .text-wrapper-2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

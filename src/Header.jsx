@@ -1,10 +1,13 @@
 import React from "react";
 import layer1 from "./yemotlogo.png";
-import './frame.css'
+import './main-header.css'
 import './styleguide.css'
-export const Frame = () => {
-  return (
-<div className="frame">
+export const Header = () => {
+  return (<>
+
+  <div className="main-header">
+
+<div className="div">
 <img className="layer" alt="Layer" src={layer1} />
 
 <div className="navbar">
@@ -18,7 +21,7 @@ export const Frame = () => {
 
 <div className="text-wrapper-4">Support</div>
 </div>
-<div className="depth-frame">
+<div className="depth-main-header">
 <div className="div-wrapper">
 <div className="text-wrapper-5">Log in</div>
 </div>
@@ -28,5 +31,8 @@ export const Frame = () => {
 </div>
 </div>
 </div>
+</div>
+</>
+
   );
 };

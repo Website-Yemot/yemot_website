@@ -1,20 +1,31 @@
-.frame {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0px;
-    position: relative;
-    width: 1200px;
-    top: 0;
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;             
+  border: 1px solid #e0e0e0;
+  background: white;        
+  display: flex;
+  justify-content: center;  
+  z-index: 1000;            
 }
 
-.frame .layer {
+.main-header .div {
+  width: 100%;     
+  max-width: 1200px;          
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+
+}
+.main-header .layer {
     aspect-ratio: 4.5;
     height: 32px;
     position: relative;
     width: 143.97px;
 }
-.frame .navbar {
+.main-header .navbar {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -22,7 +33,7 @@
     justify-content: center;
     position: relative;
 }
-.frame .text-wrapper {
+.main-header .text-wrapper {
     align-self: stretch;
     color: var(--brandcolor-brand-black-white-black);
     font-family: "Inter-Regular", Helvetica;
@@ -35,7 +46,7 @@
     white-space: nowrap;
     width: 119px;
 }
-.frame .text-wrapper-2 {
+.main-header .text-wrapper-2 {
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -48,7 +59,7 @@ position: relative;
 white-space: nowrap;
 width: 57px;}
 
-.frame .text-wrapper-3 {
+.main-header .text-wrapper-3 {
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -61,7 +72,7 @@ position: relative;
 white-space: nowrap;
 width: 53px;}
 
-.frame .text-wrapper-4 {
+.main-header .text-wrapper-4 {
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -74,7 +85,7 @@ position: relative;
 white-space: nowrap;
 width: 62px;}
 
-.frame .depth-frame {
+.main-header .depth-main-header {
 align-items: center;
 display: inline-flex;
 flex: 0 0 auto;
@@ -82,14 +93,14 @@ gap: 32px;
 justify-content: flex-end;
 position: relative;}
 
-.frame .div-wrapper {
+.main-header .div-wrapper {
 align-items: flex-start;
 display: inline-flex;
 flex: 0 0 auto;
 flex-direction: column;
 position: relative;}
 
-frame .text-wrapper-5 {
+main-header .text-wrapper-5 {
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Medium", Helvetica;
@@ -100,7 +111,7 @@ line-height: 21px;
 margin-top: -1.00px;
 position: relative;}
 
-.frame .div-wrapper-2 {
+.main-header .div-wrapper-2 {
 align-items: center;
 background-color: var(--brandcolor-brand-primary-400);
 border-radius: 32px;
@@ -111,7 +122,7 @@ justify-content: center;
 padding: 18px 24px;
 position: relative;}
 
-.frame .text-wrapper-6 {
+.main-header .text-wrapper-6 {
 color: var(--brandcolor-brand-black-white-white);
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
@@ -122,3 +133,67 @@ margin-top: -1.00px;
 position: relative;
 white-space: nowrap;
 width: fit-content;}
+
+@media (max-width: 900px) {
+  .main-header .div {
+    width: 98vw;
+    padding: 16px 2vw;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .main-header .navbar,
+  .main-header .depth-main-header {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-header .text-wrapper,
+  .main-header .text-wrapper-2,
+  .main-header .text-wrapper-3,
+  .main-header .text-wrapper-4,
+  .main-header .text-wrapper-5,
+  .main-header .text-wrapper-6 {
+    font-size: 14px;
+    width: auto;
+    min-width: 48px;
+    padding: 0 4px;
+  }
+  .main-header .div-wrapper-2 {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  .main-header .layer {
+    width: 100px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    padding: 0;
+  }
+  .main-header .div {
+    width: 100vw;
+    padding: 8px 0;
+    flex-direction: column;   /* כל ילד בשורה נפרדת */
+    gap: 8px;
+    align-items: center;
+  }
+  .main-header .navbar,
+  .main-header .depth-main-header {
+    width: 100%;
+    gap: 8px;
+    flex-direction: row;      /* כל כפתורי הניווט בשורה */
+    align-items: center;
+    justify-content: center;
+  }
+  .main-header .div-wrapper-2 {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  .main-header .layer {
+    width: 80px;
+    height: 18px;
+  }
+}
