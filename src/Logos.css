@@ -1,0 +1,179 @@
+.logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 10px;
+  position: relative;
+  margin-top: 16vw;}
+
+.logo .more-than {
+  color: var(--brandcolor-brand-black-white-black);
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left:0;
+  letter-spacing: 0;
+  line-height: 57.6px;
+  text-align: center;
+  width: 720px;
+  position: relative;
+  margin-top: -120px;
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* טקסטים */
+.logo .text-wrapper {
+  color: #000;
+}
+.logo .span {
+  color: #8b3dff;
+}
+
+/* עוטף לוגו בודד */ 
+.img-wrapper { 
+  width: 160px;
+  padding: 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+} 
+     
+/* כל תמונה */     
+.img, .image-2, .image-3, .image-4 { 
+  display: block; 
+  width:auto;
+  object-fit: contain; 
+  height: 80px; 
+  left: 0; 
+  top:0; 
+}
+
+.img-wrapper { 
+  width: 100px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.img { 
+  width: 100%; 
+  object-fit: contain; 
+}
+
+/* עוטף את השורות */
+.logos-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+
+  /* ✅ מוסיף מסיכת fade בצדדים */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+/* שורה */
+.logos-row {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 40px;
+  align-items: center;
+  width: max-content; /* חשוב כדי שהשורה לא תתכווץ */
+}
+
+/* ✅ אפקט טשטוש בכניסה/יציאה */
+.img-wrapper {
+  filter:none;
+  opacity: 1;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+/* ✅ כשהתמונה במרכז – רזולוציה מלאה */
+
+
+@keyframes focus-in {
+  0%, 10%, 90%, 100% {
+    filter: blur(3px);
+    opacity: 0.6;
+  }
+  30%, 70% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* תזוזה שמאלה */
+.scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+/* תזוזה ימינה */
+.scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* הגדרות האנימציות */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+/* רספונסיביות */
+@media (max-width: 900px) {
+  .logo .div {
+    padding: 60px 0;
+    gap: 32px;
+  }
+  .logos-row {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .logo .more-than {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo .div {
+    padding: 24px 0;
+    gap: 16px;
+  }
+  .logos-row {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .logo .more-than {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 98vw;
+  }
+}

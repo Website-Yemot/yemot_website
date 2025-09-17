@@ -8,22 +8,32 @@ import { AddOns } from './components/AddOns/AddOns'
 import { SupportIntro } from './components/Support/SupportIntro'
 import { FreeFeatures } from './components/FreeFeatures/FreeFeatures'
 import { Support } from './components/Support/Support'
+import { Header } from './Header'
+import { Banner } from './Banner'
+import { Benefits } from './Benefits'
+import { Logos } from './Logos'
+import { Demos } from './Demos'
+import { Dialogue } from './Dialogue'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        {/* <Frame /> */}
-        {/* <FeatureHighlight /> */}
-        {/* <PlansAndPricing /> */}
-        {/* <AddOns></AddOns> */}
-        {/* <SupportIntro></SupportIntro> */}
-        {/* <FreeFeatures></FreeFeatures> */}
-        <Support></Support>
-      </div>
-    </>
+      <FeatureHighlight /> 
+      <PlansAndPricing />
+      <AddOns></AddOns>
+       {/* <SupportIntro></SupportIntro> */}
+      <FreeFeatures></FreeFeatures> 
+      <Support></Support>
+      <Header></Header>
+      <Banner></Banner>
+      <Benefits></Benefits>
+      <Logos></Logos>
+      <Demos></Demos>
+      <Dialogue></Dialogue>
+      </>
+
   )
 }
 
