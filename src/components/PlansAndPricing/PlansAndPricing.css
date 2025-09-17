@@ -1,5 +1,5 @@
 .section-container {
-    background:var(--brandcolor-brand-black-white-white);
+    background: var(--brandcolor-brand-black-white-white);
     display: flex;
     width: 1200px;
     margin-top: 120px;
@@ -44,32 +44,63 @@
 
 #basic {
     border-radius: 16px;
-    background: var(--brand-black_white-white, #FFF);
+    background: var(--brandcolor-brand-black-white-white);
 }
 
 #pro {
     border-radius: 12px;
-    border: 2px solid var(--brand-secondary-100, #E8E9FF);
+    border: 2px solid var(--brandcolor-brand-secondary-100);
     background: rgba(232, 233, 255, 0.32);
     position: relative;
 }
 
 #doneForYou {
     border-radius: 16px;
-    background: var(--brand-black_white-white, #FFF);
+    background: var(--brandcolor-brand-black-white-white);
 }
 
 .section-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
     align-self: stretch;
+}
+
+.section-wrapper .plan {
+    margin-bottom: 4px;
+}
+
+.section-wrapper .price {
+    margin-bottom: 16px;
+}
+
+.plan {
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: stretch;
+    text-align: left;
+}
+
+.price {
+    align-self: stretch;
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px;
+    text-align: left;
 }
 
 .badge {
     border-radius: 18px;
-    background: var(--brand-secondary-100, #E8E9FF);
+    background: var(--brandcolor-brand-secondary-100);
     position: absolute;
     left: 156px;
     top: -13.375px;
@@ -87,28 +118,7 @@
     line-height: 100%;
 }
 
-.plan {
-    align-self: stretch;
-    color: var(--brand-black_white-black, #000);
-    font-feature-settings: 'dlig' on;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    /* 125% */
-}
 
-.price {
-    align-self: stretch;
-    color: var(--brand-black_white-black, #000);
-    font-feature-settings: 'dlig' on;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 45px;
-}
 
 .outline {
     align-items: center;
@@ -117,13 +127,12 @@
     flex: 0 0 auto;
     gap: 10px;
     justify-content: center;
-    padding: 18px 24px;
+    padding: 18px;
     position: relative;
     font-style: normal;
     font-weight: 600;
     min-width: 84px;
     max-width: 480px;
-
     align-self: stretch;
     overflow: hidden;
     color: var(--brandcolor-brand-black-white-white);
@@ -144,10 +153,64 @@
 }
 
 #outlineDoneForYou {
-    color: var(--brand-black_white-black, #000);
+    color: var(--brandcolor-brand-black-white-black);
     border-radius: 32px;
-    border: 1px solid var(--brand-grey-200, #C2C2C5);
+    border: 1px solid var(--brandcolor-brand-grey-200);
+    font-size: 16px;
 }
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list li {
+    color: var(--brandcolor-brand-grey-400);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.list li.hint {
+    color: var(--brandcolor-brand-secondary-400);
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.list li.hint .list-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.desc {
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    height: 166px;
+    align-self: stretch;
+    text-align: left;
+}
+
 /* @media (max-width: 1200px) {
     .main-content {
         flex-direction: column;
