@@ -13,8 +13,8 @@ import image10 from "./logos/image 10.png";
 
 
 export const Logos = () => {
-  const row1 = [image1, image2, image3, image4, image5];
-  const row2 = [image6, image7, image8, image9, image10];
+  const row1 = [image1, image2, image3, image4, image5,image1, image2, image3, image4, image5];
+  const row2 = [image6, image7, image8, image9, image10,image6, image7, image8, image9, image10];
 
   return (
     <div className="logo">
@@ -34,6 +34,11 @@ export const Logos = () => {
                 <img className="img" src={img} alt={`Logo ${i + 1}`} />
               </div>
             ))}
+             {[...row1, ...row1].map((img, i) => (
+            <div className="img-wrapper" key={`r1-${i}`}>
+              <img className="img" src={img} alt={`Logo ${i + 1}`} />
+            </div>
+          ))}
           </div>
 
           <div className="logos-row scroll-right">
@@ -42,6 +47,11 @@ export const Logos = () => {
                 <img className="img" src={img} alt={`Logo ${i + 6}`} />
               </div>
             ))}
+              {[...row2, ...row2].map((img, i) => (
+    <div className="img-wrapper" key={`r2-${i}`}>
+      <img className="img" src={img} alt={`Logo ${i + 6}`} />
+    </div>
+  ))}
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ export const Header = () => {
 </div>
 
 <div className="div-wrapper-2">
-<div className="text-wrapper-6">Start Free</div>
+<div className="text-wrapper-6" onClick={() => alert("fh")}>Start Free</div>
 </div>
 </div>
 </div>

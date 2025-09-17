@@ -1,0 +1,73 @@
+.dialogue_wrapper {
+  width: 100vw;              
+  background-color: #fafafa; 
+  position: relative;
+  padding: 60px 0;
+  /* margin-top: -120px; */
+  margin-left: calc(50% - 50vw);
+  display: flex;              /* 👈 הופך את ה-wrapper לפלקס */
+  justify-content: center;    /* 👈 מרכז אופקית */
+  align-items: center;        /* 👈 מרכז אנכית (אם רוצים) */
+}
+
+.dialogue {
+align-items: center;
+background-color: var( --brandcolor-brand-tertiary-700-duplicate);
+border-radius: 32px;
+display: flex;
+flex-direction: column;
+gap: 32px;
+height: 676px;
+justify-content: flex-start;
+padding: 7px 64px 64px;
+position: relative;
+max-width: 1200px;
+width: 100%;}
+
+.dialogue .element {
+aspect-ratio: 2.54;
+height: auto;
+margin-top: 0;
+position: relative;
+width: 908px;}
+
+.dialogue .div {
+align-items: center;
+display: flex;
+flex: 0 0 auto;
+flex-direction: column;
+gap: 14px;
+justify-content: center;
+margin-bottom: -6.94px;
+padding: 0px 0px 24px;
+position: relative;
+width: 514px;}
+
+.dialogue .text-wrapper {
+color: #ffffff;
+font-family: "Poppins-SemiBold", Helvetica;
+font-size: 44px;
+font-weight: 600;
+letter-spacing: 0;
+line-height: 48.0px;
+margin-left: -51.00px;
+margin-right: -51.00px;
+margin-top: -1.00px;
+position: relative;
+text-align: center;
+width: 516px;
+height: auto;}
+
+.dialogue .if-you-can-imagine {
+color: var(--brandcolor-brand-tertiary-300);
+font-family: "Poppins-SemiBold", Helvetica;
+font-size: 44px;
+font-weight: 600;
+margin-top: 14px;
+letter-spacing: 0;
+line-height: 48.0px;
+margin-left: -51.00px;
+margin-right: -51.00px;
+position: relative;
+text-align: center;
+width: 516px;}

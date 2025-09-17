@@ -7,6 +7,7 @@ import { Banner } from './Banner'
 import { Benefits } from './Benefits'
 import { Logos } from './Logos'
 import { Demos } from './Demos'
+import { Dialogue } from './Dialogue'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
       <Benefits></Benefits>
       <Logos></Logos>
       <Demos></Demos>
+      <Dialogue></Dialogue>
       </>
   )
 }

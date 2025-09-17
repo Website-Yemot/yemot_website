@@ -115,12 +115,12 @@
 
 /* תזוזה שמאלה */
 .scroll-left {
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 
 /* תזוזה ימינה */
 .scroll-right {
-  animation: scroll-right 20s linear infinite;
+  animation: scroll-right 30s linear infinite;
 }
 
 /* הגדרות האנימציות */

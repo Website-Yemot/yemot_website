@@ -124,6 +124,7 @@ padding: 18px 24px;
 position: relative;}
 
 .banner .p {
+   cursor: pointer;
 color: #ffffff;
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
@@ -162,6 +163,7 @@ position: relative;}
 
 
 .banner .text-wrapper-4 {
+   cursor: pointer;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
