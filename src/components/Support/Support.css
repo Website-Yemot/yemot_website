@@ -1,0 +1,100 @@
+.Alls{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+align-self: stretch;
+}
+.support-container{
+  display: flex;
+padding: 120px 0;
+flex-direction: column;
+align-items: center;
+gap: 64px;  
+}
+.support-title{display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+}
+.support-title p{
+    flex: 1 0 0;
+    color: var(--brand-black_white-black, #000);
+text-align: center;
+font-feature-settings: 'dlig' on;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%;
+}
+.contact-section{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 64px;
+}
+.contact-buttons{
+    display: flex;
+align-items: flex-start;
+gap: 12px;
+}
+#whatsapp-btn,#email-btn{
+    display: flex;
+height: 54px;
+padding: 18px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#email-btn{
+    border-radius: 32px;
+border: 1px solid var(--brand-primary-400, #8B3DFF);
+
+}
+#whatsapp-btn{
+    border-radius: 32px;
+background: var(--brand-primary-400, #8B3DFF);
+}
+#whatsapp-btn .whatsapp-icon ,#email-btn .email-icon{
+ width: 24px;
+height: 24px;
+}
+
+#whatsapp-btn span {
+ color: var(--brand-black_white-white, #FFF);
+font-feature-settings: 'dlig' on;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 108%; /* 17.28px */
+}
+#email-btn span {
+color: var(--brand-primary-400, #8B3DFF);
+font-feature-settings: 'dlig' on;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 108%; /* 17.28px */
+}
+.offices{
+    display: flex;
+width: 928px;
+align-items: flex-start;
+gap: 12px;
+}
+.office-card{
+    display: flex;
+padding: 32px;
+flex-direction: column;
+align-items: center;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+    border-radius: 16px;
+background: var(--brand-black_white-white, #FFF);
+box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.08);
+}

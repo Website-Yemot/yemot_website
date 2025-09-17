@@ -1,0 +1,51 @@
+.support-intro {
+    display: flex;
+    width: 1920px;
+    padding: 120px 0 260px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: rgba(230, 222, 255, 0.32);
+    overflow: hidden;
+  
+}
+/* #root {
+    margin: 0;
+   
+} */
+.support-subtitle {
+    color: var( --brandcolor-brand-primary-400);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.support-title {
+    color: var( --brandcolor-brand-primary-400);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+     margin: 0px;
+    padding: 0px;
+}
+
+.phones {
+    /* position: absolute; */
+    left: 530px;
+    bottom: 100.625px;
+    width: auto;
+    height: 480px;
+    aspect-ratio: 430/121;
+    margin-bottom: -480px;
+}

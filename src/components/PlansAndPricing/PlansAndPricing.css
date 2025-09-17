@@ -1,0 +1,225 @@
+.section-container {
+    background: var(--brandcolor-brand-black-white-white);
+    display: flex;
+    width: 1200px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.section-title {
+    flex: 1 0 0;
+    color: var(--brandcolor-brand-black-white-black);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0px;
+    max-width: 800px;
+}
+
+.main-content {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.08);
+}
+
+#basic {
+    border-radius: 16px;
+    background: var(--brandcolor-brand-black-white-white);
+}
+
+#pro {
+    border-radius: 12px;
+    border: 2px solid var(--brandcolor-brand-secondary-100);
+    background: rgba(232, 233, 255, 0.32);
+    position: relative;
+}
+
+#doneForYou {
+    border-radius: 16px;
+    background: var(--brandcolor-brand-black-white-white);
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.section-wrapper .plan {
+    margin-bottom: 4px;
+}
+
+.section-wrapper .price {
+    margin-bottom: 16px;
+}
+
+.plan {
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: stretch;
+    text-align: left;
+}
+
+.price {
+    align-self: stretch;
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px;
+    text-align: left;
+}
+
+.badge {
+    border-radius: 18px;
+    background: var(--brandcolor-brand-secondary-100);
+    position: absolute;
+    left: 156px;
+    top: -13.375px;
+    display: flex;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--brandcolor-brand-secondary-500);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+
+
+.outline {
+    align-items: center;
+    border-radius: 32px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 18px;
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    min-width: 84px;
+    max-width: 480px;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--brandcolor-brand-black-white-white);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+#outlineBasic,
+#outlinePro {
+    background: var(--brandcolor-brand-secondary-400);
+}
+
+#outlineDoneForYou {
+    color: var(--brandcolor-brand-black-white-black);
+    border-radius: 32px;
+    border: 1px solid var(--brandcolor-brand-grey-200);
+    font-size: 16px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list li {
+    color: var(--brandcolor-brand-grey-400);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.list li.hint {
+    color: var(--brandcolor-brand-secondary-400);
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.list li.hint .list-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.desc {
+    color: var(--brandcolor-brand-black-white-black);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    height: 166px;
+    align-self: stretch;
+    text-align: left;
+}
+
+/* @media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+    }
+    .card {
+        max-width: 95vw;
+        min-width: 260px;
+    }
+} */
