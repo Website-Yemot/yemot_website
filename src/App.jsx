@@ -20,18 +20,19 @@ function App() {
 
   return (
     <>
-      <FeatureHighlight /> 
-      <PlansAndPricing />
-      <AddOns></AddOns>
-       {/* <SupportIntro></SupportIntro> */}
-      <FreeFeatures></FreeFeatures> 
-      <Support></Support>
+ 
       <Header></Header>
       <Banner></Banner>
       <Benefits></Benefits>
       <Logos></Logos>
       <Demos></Demos>
       <Dialogue></Dialogue>
+      <FeatureHighlight /> 
+      <PlansAndPricing />
+      <AddOns></AddOns>
+       {/* <SupportIntro></SupportIntro> */}
+      <FreeFeatures></FreeFeatures> 
+      <Support></Support>
       </>
 
   )
