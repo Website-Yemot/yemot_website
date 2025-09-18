@@ -43,6 +43,7 @@ export const AddOns = () => {
     ];
 
     return (
+        <div className="AllA">
         <div className="section-containerA">
             <h2 className="section-titleA" id="titleA">Add-Ons</h2>
             <div className="addons-cards">
@@ -104,6 +105,7 @@ export const AddOns = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

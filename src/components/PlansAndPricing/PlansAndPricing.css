@@ -1,4 +1,11 @@
-.section-container {
+.AllP {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.section-containerp {
     background: var(--brandcolor-brand-black-white-white);
     display: flex;
     width: 1200px;
@@ -9,7 +16,7 @@
     gap: 64px;
 }
 
-.section-title {
+.section-titlep {
     flex: 1 0 0;
     color: var(--brandcolor-brand-black-white-black);
     text-align: center;
@@ -31,7 +38,7 @@
     gap: 24px;
 }
 
-.card {
+.cardp {
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -59,18 +66,19 @@
     background: var(--brandcolor-brand-black-white-white);
 }
 
-.section-wrapper {
+.section-wrapperp {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
     align-self: stretch;
 }
 
-.section-wrapper .plan {
+.section-wrapperp .plan {
     margin-bottom: 4px;
 }
 
-.section-wrapper .price {
+.section-wrapperp .price {
     margin-bottom: 16px;
 }
 
@@ -86,7 +94,7 @@
     text-align: left;
 }
 
-.price {
+.pricep {
     align-self: stretch;
     color: var(--brandcolor-brand-black-white-black);
     font-feature-settings: 'dlig' on;
@@ -209,6 +217,10 @@
     height: 166px;
     align-self: stretch;
     text-align: left;
+}
+
+#Checkmark {
+    width: 20px;
 }
 
 /* @media (max-width: 1200px) {

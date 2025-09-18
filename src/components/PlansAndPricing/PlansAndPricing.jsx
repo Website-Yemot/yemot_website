@@ -7,13 +7,15 @@ import '@fontsource/inter/500.css';
 import '@fontsource/inter/900.css';
 export const PlansAndPricing = () => {
     return (
-        <div className="section-container">
-            <h2 className="section-title">Simple plans and pricing</h2>
+        <div className="AllP">
+        <div className="section-containerp">
+            <h2 className="section-titlep">Simple plans and pricing</h2>
             <div className="main-content">
-                <article className="card" id="basic">
-                    <div className="section-wrapper">
+                <article className="cardp" id="basic">
+                    <div className="section-wrapperp">
+                        <div>
                         <div className="plan">Basic</div>
-                        <div className="price">Free</div>
+                        <div className="pricep">Free</div></div>
                         <a className="outline" id="outlineBasic" href="#create">Create Account</a>
                     </div>
                     <ul className="list">
@@ -45,11 +47,12 @@ export const PlansAndPricing = () => {
                     </ul>
                 </article>
 
-                <article className="card" id="pro">
-                    <div className="section-wrapper">
+                <article className="cardp" id="pro">
+                    <div className="section-wrapperp">
                         <div className="badge">Popular</div>
+                        <div>
                         <div className="plan">Pro</div>
-                        <div className="price">$19</div>
+                        <div className="pricep">$19</div></div>
                         <a className="outline" id="outlinePro" href="#create">Create Account</a>
                     </div>
                     <ul className="list">
@@ -70,27 +73,29 @@ export const PlansAndPricing = () => {
                             <img src="/Checkmark.svg" alt="" className="list-icon" />
                             Advanced support
                         </li>
-                        <li >
-                            <img src="/CheckmarkP.svg" alt="" className="list-icon" />
+                        <li className="hint">
+                            <img src="/CheckmarkP.svg" alt="" className="list-icon" id="Checkmark" />
                             Remove random ads
                         </li>
-                        <li>
-                            <img src="/CheckmarkP.svg" alt="" className="list-icon" />
+                        <li className="hint">
+                            <img src="/CheckmarkP.svg" alt="" className="list-icon" id="Checkmark" />
                             Could add add-ons (Add-ons are charged separately)
                         </li>
                     </ul>
                 </article>
 
-                <article className="card" id="doneForYou">
-                    <div className="section-wrapper">
+                <article className="cardp" id="doneForYou">
+                    <div className="section-wrapperp">
+                        <div>
                         <div className="plan">Done For You</div>
-                        <div className="price">Custom</div>
+                        <div className="pricep">Custom</div></div>
                         <a className="outline" id="outlineDoneForYou" href="#calc">Start Calculation</a>
                     </div>
                     <p className="desc">Our expert team will build your perfect phone system for you. Just tell us your requirements, select your desired features, and we'll handle the rest. Starting from only $15.</p>
                 </article>
 
             </div>
+        </div>
         </div>
     );
 }

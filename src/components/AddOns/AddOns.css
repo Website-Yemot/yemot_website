@@ -6,7 +6,14 @@
 * {
     min-height: 0vh;
 } */
-
+.AllA{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;    
+}
 .section-containerA {
     display: flex;
     width: 1200px;

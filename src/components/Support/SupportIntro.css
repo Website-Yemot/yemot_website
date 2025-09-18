@@ -1,3 +1,8 @@
+.support{
+   width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: rgba(230, 222, 255, 0.32);
+}
 .support-intro {
     display: flex;
     width: 1920px;
@@ -6,16 +11,11 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    background: rgba(230, 222, 255, 0.32);
     overflow: hidden;
-  
 }
-/* #root {
-    margin: 0;
-   
-} */
+
 .support-subtitle {
-    color: var( --brandcolor-brand-primary-400);
+    color: var(--brandcolor-brand-primary-400);
     text-align: center;
     font-feature-settings: 'dlig' on;
     font-family: Poppins;
@@ -28,7 +28,7 @@
 }
 
 .support-title {
-    color: var( --brandcolor-brand-primary-400);
+    color: var(--brandcolor-brand-primary-400);
     text-align: center;
     font-feature-settings: 'dlig' on;
     font-family: Poppins;
@@ -36,7 +36,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-     margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 

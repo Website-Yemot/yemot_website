@@ -34,19 +34,20 @@ const FeatureCard = ({ title, desc, icon, colorClass }) => (
     </div>
 );
 export const FreeFeatures = () => {
-    return (<div className="AllFFF">
+    return (
+    <div className="AllFFF">
         <div className="AllFF">
             <div className="mainTitle">
                 <p className="section-titleFF">Unlimited usage of <span className="highlight">free features</span> the list goes on and on</p>
             </div>
             <div className="features-wrapperFF">
-                <div className="features-rowFF scroll-left">
+                <div className="features-rowFF scroll-leftF">
                     <div className="features-rowFF">
                         {row1.map((item, idx) => <FeatureCard key={idx} {...item} />)}
                         {row1.map((item, idx) => <FeatureCard key={`dup-${idx}`} {...item} />)}
                     </div>
                 </div>
-                <div className="features-rowFF scroll-right">
+                <div className="features-rowFF scroll-rightF">
                     <div className="features-rowFF">
                         {row2.map((item, idx) => <FeatureCard key={idx} {...item} />)}
                         {row2.map((item, idx) => <FeatureCard key={`dup-${idx}`} {...item} />)}

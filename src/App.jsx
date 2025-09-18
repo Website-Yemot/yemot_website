@@ -27,11 +27,11 @@ function App() {
       <Logos></Logos>
       <Demos></Demos>
       <Dialogue></Dialogue>
+      <FreeFeatures></FreeFeatures> 
       <FeatureHighlight /> 
       <PlansAndPricing />
       <AddOns></AddOns>
-       {/* <SupportIntro></SupportIntro> */}
-      <FreeFeatures></FreeFeatures> 
+      <SupportIntro></SupportIntro>
       <Support></Support>
       </>
 
