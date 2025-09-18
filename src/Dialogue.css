@@ -23,13 +23,26 @@ padding: 7px 64px 64px;
 position: relative;
 max-width: 1200px;
 width: 100%;}
+.element {
+  position: sticky;
+  top: 40px;
+  width: 908px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-.dialogue .element {
-aspect-ratio: 2.54;
-height: auto;
-margin-top: 0;
-position: relative;
-width: 908px;}
+
+.element.in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); /* חוזר למקום */
+}
+
+.element.out-view {
+  opacity: 1;
+  transform: translate3d(0, -100%, 0); /* עולה למעלה */
+}
+
 
 .dialogue .div {
 align-items: center;
