@@ -16,6 +16,7 @@ import { Logos } from './components/Logos/Logos'
 import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
 import { Footer } from './components/Footer/Footer'
+import { Policy } from './components/PolicyBar/Policy'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,6 +37,7 @@ function App() {
       <SupportIntro></SupportIntro>
       <Support></Support>
       <Footer></Footer>
+      <Policy></Policy>
       </>
 
   )

@@ -1,0 +1,38 @@
+.policy {
+align-items: center;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+width: 100vw; 
+margin-left: calc(50% - 50vw);
+gap: 30px;
+position: relative;}
+
+.policy .frame {
+align-items: flex-start;
+display: flex;
+flex: 0 0 auto;
+gap: 120px;
+justify-content: space-around;
+padding: 24px 0px;
+position: relative;
+width: 1200px;}
+
+.policy .div {
+align-items: flex-start;
+display: inline-flex;
+flex: 0 0 auto;
+gap: 32px;
+position: relative;}
+
+.policy .text-wrapper {
+color: #1d2939;
+font-family: "Poppins-Regular", Helvetica;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 16.8px;
+margin-top: -1.00px;
+position: relative;
+white-space: nowrap;
+width: fit-content;}
