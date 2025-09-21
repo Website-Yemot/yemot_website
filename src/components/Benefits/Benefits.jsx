@@ -23,6 +23,5 @@ export const Benefits = () => {
 </div>
 </div>
 </>
-
   );
 };
