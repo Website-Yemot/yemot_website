@@ -5,8 +5,14 @@ export const Footer = () => {
     <div className="footer">
       <div className="frame-2">
         <div className="div-2">
-       <img className="img" alt="vector" src={'yemotlogo.png'} />
-        <div className="text-wrapper-3 ">Yemot. Build any phone system <br/>you could just dream of.</div>
+       
+  <div className="logo-block">
+    <img className="img" alt="vector" src={'yemotlogo.png'} />
+    <div className="text-wrapper-3">
+      Yemot. Build any phone system<br />you could just dream of.
+    </div>
+  </div>
+
         </div>
 
         <div className="div-2">

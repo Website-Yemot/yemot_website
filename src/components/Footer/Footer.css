@@ -73,9 +73,18 @@ position: relative;
 white-space: nowrap;
 width: fit-content;
 width: 160px;
-  text-align: left;
-
+text-align: left;
 }
+
+.footer .logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -300px; /* מזיז את כל הקבוצה שמאלה */
+  gap: 32px; /* רווח בין הלוגו לטקסט */
+}
+
+
 
 
 
