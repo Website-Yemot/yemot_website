@@ -49,3 +49,56 @@
     aspect-ratio: 430/121;
     margin-bottom: -480px;
 }
+
+@media (max-width: 1280px) {
+  .support-intro {
+    width: 100%;
+    padding: 60px 0;
+    gap: 16px;
+    height: 300px;
+  }
+  .support-title {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  .support-subtitle {
+    font-size: 28px;
+  }
+  .phones {
+    height: 260px;
+    margin-bottom: -250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-intro {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0 60px 0;
+    gap: 12px;
+     height: 140px;
+  }
+  .support-title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .support-subtitle {
+    font-size: 16px;
+  }
+  .phones {
+    height: 200px;
+    margin-bottom: -160px;
+  }
+}
+@media (max-width: 576px) {
+  .support-intro {
+    padding: 24px 0 40px 0;
+  }
+  .support-title {
+    font-size: 20px;
+  }
+  .phones {
+    height: 160px;
+    margin-bottom: -120px;
+  }
+}
