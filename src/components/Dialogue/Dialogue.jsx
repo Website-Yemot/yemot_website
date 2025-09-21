@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Dialogue_img from "./dialogue_img.svg";
 import "./Dialogue.css";
 
 export const Dialogue = () => {
@@ -40,7 +39,7 @@ export const Dialogue = () => {
         <img
           ref={imgRef}
           alt="Element"
-          src={Dialogue_img}
+          src={"dialogue_img.svg"}
           className={`element ${visible ? "in-view" : "out-view"}`}
         />
 

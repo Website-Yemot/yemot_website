@@ -1,15 +1,14 @@
 import './Logos.css'
-import './styleguide.css'
-import image1 from "./logos/image 1.png";
-import image2 from "./logos/image 2.png";
-import image3 from "./logos/image 3.png";
-import image4 from "./logos/image 4.png";
-import image5 from "./logos/image 5.png";
-import image6 from "./logos/image 6.png";
-import image7 from "./logos/image 7.png";
-import image8 from "./logos/image 8.png";
-import image9 from "./logos/image 9.png";
-import image10 from "./logos/image 10.png";
+import image1 from "/logos/image 1.png";
+import image2 from "/logos/image 2.png";
+import image3 from "/logos/image 3.png";
+import image4 from "/logos/image 4.png";
+import image5 from "/logos/image 5.png";
+import image6 from "/logos/image 6.png";
+import image7 from "/logos/image 7.png";
+import image8 from "/logos/image 8.png";
+import image9 from "/logos/image 9.png";
+import image10 from "/logos/image 10.png";
 
 
 export const Logos = () => {

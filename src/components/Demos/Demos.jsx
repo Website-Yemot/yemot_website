@@ -1,8 +1,5 @@
 import { useState, useRef } from "react";
 import './Demos.css';
-import './styleguide.css';
-import playIcon from "./play.svg";
-import pauseIcon from "./pause.svg";
 
 const items = [
   {
@@ -57,7 +54,7 @@ const AudioCard = ({ item, isActive, onToggle }) => {
             className="vector"
             alt="icon"
             onClick={onToggle}
-            src={isActive ? pauseIcon : playIcon}
+            src={isActive ? "pause.svg" : "play.svg"}
           />
         </div>
         <div className="quote-wrapper">

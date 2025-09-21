@@ -1,6 +1,4 @@
-import React from "react";
-import './benefits.css'
-import './styleguide.css'
+import './Benefits.css'
 
 export const Benefits = () => {
   return (<>

@@ -1,6 +1,4 @@
 import './Banner.css'
-import './styleguide.css'
-import extenstionimage from "./Hero_Screen.png"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const Banner = () => {
@@ -50,7 +48,7 @@ with unlimited core features and channels.
 </div>
 
 <div className="image-wrapper">
-<img className="image" alt="Image" src={extenstionimage} />
+<img className="image" alt="Image" src={"Hero_Screen.png"} />
 </div>
 </div>
 </div>

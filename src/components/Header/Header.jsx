@@ -1,14 +1,11 @@
-import React from "react";
-import layer1 from "./yemotlogo.png";
 import './main-header.css'
-import './styleguide.css'
 export const Header = () => {
   return (<>
 
   <div className="main-header">
 
 <div className="div">
-<img className="layer" alt="Layer" src={layer1} />
+<img className="layer" alt="Layer" src={"yemotlogo.png"} />
 
 <div className="navbar">
 <div className="text-wrapper">Phone Systems</div>
