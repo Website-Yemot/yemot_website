@@ -15,6 +15,7 @@ import { Benefits } from './components/Benefits/Benefits'
 import { Logos } from './components/Logos/Logos'
 import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,7 @@ function App() {
       <AddOns></AddOns>
       <SupportIntro></SupportIntro>
       <Support></Support>
+      <Footer></Footer>
       </>
 
   )
