@@ -100,6 +100,13 @@
     gap: 12px;
 }
 
+.lottie-wrapper {
+    position: absolute;
+    top: -12%;
+    width: 120px;
+    height: auto;
+}
+
 .office-card {
     display: flex;
     padding: 32px;
@@ -111,6 +118,8 @@
     border-radius: 16px;
     background: var(--brandcolor-brand-black-white-white);
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: visible;
 }
 
 .flag-wrapper {
@@ -193,51 +202,60 @@
     font-weight: 500;
     line-height: 21px;
 }
+
 @media (max-width: 768px) {
-  .support-containerA {
-    padding: 40px 0;
-    gap: 32px;
-  }
-  .support-titleA p {
-    font-size: 28px;
-  }
-  .offices {
-    flex-direction: column;
-    width: 100%;
-    gap: 16px;
-  }
-  .office-card {
-    padding: 16px;
-    gap: 16px;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contact-section {
-    gap: 32px;
-  }
-  .contact-buttons {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    align-items: center;
-  }
+    .support-containerA {
+        padding: 40px 0;
+        gap: 32px;
+    }
+
+    .support-titleA p {
+        font-size: 28px;
+    }
+
+    .offices {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .office-card {
+        padding: 16px;
+        gap: 16px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section {
+        gap: 32px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 @media (max-width: 576px) {
-  .support-titleA p {
-    font-size: 20px;
-  }
-  .office-card {
-    padding: 10px;
-    gap: 10px;
-    max-width: 95vw;
-  }
-  .title-phone p,
-  .title-phone a {
-    font-size: 16px;
-  }
-  .day-range p {
-    font-size: 12px;
-  }
+    .support-titleA p {
+        font-size: 20px;
+    }
+
+    .office-card {
+        padding: 10px;
+        gap: 10px;
+        max-width: 95vw;
+    }
+
+    .title-phone p,
+    .title-phone a {
+        font-size: 16px;
+    }
+
+    .day-range p {
+        font-size: 12px;
+    }
 }
