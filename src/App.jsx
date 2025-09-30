@@ -19,27 +19,34 @@ import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
- 
-      <Header></Header>
-      <Banner></Banner>
-      <Benefits></Benefits>
-      <Logos></Logos>
-      <Demos></Demos>
-      <Dialogue></Dialogue>
-      <FreeFeatures></FreeFeatures> 
-      <FeatureHighlight /> 
-      <PlansAndPricing />
-      <AddOns></AddOns>
-      <SupportIntro></SupportIntro>
-      <Support></Support>
-      <Footer></Footer>
-      <Policy></Policy>
-      </>
-
+      <Header />
+      <Banner />
+      <Benefits />
+      <Logos />
+      <div id="phone-systems">
+        <Demos />
+      </div>
+      <Dialogue />
+      <div id="features">
+        <FreeFeatures />
+      </div>
+      <div id="why-us">
+        <FeatureHighlight />
+      </div>
+      <div id="pricing">
+        <PlansAndPricing />
+      </div>
+      <AddOns />
+      <SupportIntro />
+      <div id="support">
+        <Support />
+      </div>
+      <Footer />
+      <Policy />
+    </>
   )
 }
 
