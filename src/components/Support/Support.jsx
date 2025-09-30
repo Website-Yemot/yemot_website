@@ -5,7 +5,11 @@ import '@fontsource/inter/600.css';
 // import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/700.css';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export const Support = () => {
+    const currentHour = new Date().getHours();
+    const showAnimation = currentHour >= 9 && currentHour < 20;
+     const showAnimationUSA  = currentHour >= 14 && currentHour < 20;
     return (
         <div className="AllSupport">
             <div className="support-containerA">
@@ -28,6 +32,15 @@ export const Support = () => {
 
                     <div className="offices">
                         <div className="office-card">
+                             {showAnimationUSA && (
+                            <div className="lottie-wrapper">
+                                <DotLottieReact
+                                    src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
+                                    loop
+                                    autoplay
+                                />
+                            </div>
+                               )}
                             <div className="flag-wrapper">
                                 <img src="/Support/USA.png" alt="USA Flag" className="flag" />
                             </div>
@@ -39,7 +52,7 @@ export const Support = () => {
                                 <div className="hours-days-wrapper">
                                     <div className="day-range">
                                         <p>Sun - Thu:</p>
-                                        <p>9am - 5pm</p>
+                                        <p>9am - 1pm</p>
                                     </div>
                                     <div className="day-range">
                                         <p>Fri:</p>
@@ -50,6 +63,16 @@ export const Support = () => {
                         </div>
 
                         <div className="office-card">
+                            {showAnimation && (
+                                <div className="lottie-wrapper">
+                                    <DotLottieReact
+                                        src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
+                                        loop
+                                        autoplay
+                                    />
+                                </div>
+                            )}
+
                             <div className="flag-wrapper">
                                 <img src="/Support/UK.png" alt="UK Flag" className="flag" />
                             </div>
@@ -72,13 +95,22 @@ export const Support = () => {
                         </div>
 
                         <div className="office-card">
+                             {showAnimation && (
+                            <div className="lottie-wrapper">
+                                <DotLottieReact
+                                    src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
+                                    loop
+                                    autoplay
+                                />
+                            </div>
+                               )}
                             <div className="flag-wrapper">
                                 <img src="/Support/Israel.png" alt="Israel Flag" className="flag" />
                             </div>
                             <div className="office-content">
                                 <div className="title-phone">
                                     <p>Israel (IST)</p>
-                                    <a href="tel:+97223130834" className="phone">+972 2313-0834</a>
+                                    <a href="tel:+97223130834" className="phone">+972 (02) 313-0834</a>
                                 </div>
                                 <div className="hours-days-wrapper">
                                     <div className="day-range">
