@@ -1,47 +1,42 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./Dialogue.css";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const Dialogue = () => {
-  const [visible, setVisible] = useState(false);   // 👈 מצב שמחזיק אם האלמנט נראה
-  const imgRef = useRef(null);                     // 👈 רפרנס לתמונה
+  const dialogRef = useRef(null);
 
   useEffect(() => {
-  const element = imgRef.current;
-  let lastY = window.scrollY;
+    const dialog = dialogRef.current;
+    if (!dialog) return;
 
-  const handleScroll = () => {
-    if (!element) return;
+    const onScroll = () => {
+      const rect = dialog.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-    const rect = element.getBoundingClientRect();
-    const currentY = window.scrollY;
+      // חישוב התקדמות: כמה האלמנט נכנס למסך
+      const progress = Math.min(
+        Math.max(1 - rect.top / windowHeight, 0),
+        1
+      );
 
-    const scrollingDown = currentY > lastY;
-    lastY = currentY;
+      // עדכון טרנספורם: translateY עולה בהדרגה
+      dialog.style.transform = `translate3d(0, ${-100 + progress * 100}%, 0)`;
+    };
 
-    // אם האלמנט קרוב לכניסה למסך
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      if (scrollingDown) {
-        setVisible(true); // נכנס לתצוגה
-      } else {
-        setVisible(false); // מתקרב מלמעלה
-      }
-    }
-  };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // להריץ פעם ראשונה
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
-
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
-    <div className="dialogue_wrapper">
-      <div className="dialogue">
-        <img
-          ref={imgRef}
-          alt="Element"
-          src={"dialogue_img.svg"}
-          className={`element ${visible ? "in-view" : "out-view"}`}
-        />
+    <div  className="dialogue_wrapper">
+      {/* <div ref={dialogRef} className="dialogue"> */}
+     <div  className="dialogue"> 
+              <DotLottieReact className="element"
+      src="https://lottie.host/8b994981-f657-4bf1-88c1-b289cda8c78e/FpfsVhohjo.lottie"
+      loop
+      autoplay
+    />
 
         <div className="div">
           <p className="text-wrapper">And any other awesome phone system</p>

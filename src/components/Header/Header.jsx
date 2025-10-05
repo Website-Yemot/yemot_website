@@ -1,6 +1,15 @@
 import './main-header.css'
+
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 export const Header = () => {
   return (<>
+
+
 
   <div className="main-header">
 
@@ -8,15 +17,11 @@ export const Header = () => {
 <img className="layer" alt="Layer" src={"yemotlogo.png"} />
 
 <div className="navbar">
-<div className="text-wrapper">Phone Systems</div>
-
-<div className="text-wrapper-2">Features</div>
-
-<div className="text-wrapper-2">Why us</div>
-
-<div className="text-wrapper-3">Pricing</div>
-
-<div className="text-wrapper-4">Support</div>
+ <div className="text-wrapper" onClick={() => scrollToSection("demos")}>Phone Systems</div>
+  <div className="text-wrapper-2" onClick={() => scrollToSection("freefeatures")}>Features</div>
+  <div className="text-wrapper-2" onClick={() => scrollToSection("whyus")}>Why us</div>
+  <div className="text-wrapper-3" onClick={() => scrollToSection("pricing")}>Pricing</div>
+  <div className="text-wrapper-4" onClick={() => scrollToSection("support")}>Support</div>
 </div>
 <div className="depth-main-header">
 <div className="div-wrapper">

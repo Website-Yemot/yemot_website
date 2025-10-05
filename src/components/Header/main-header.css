@@ -34,6 +34,7 @@
     position: relative;
 }
 .main-header .text-wrapper {
+     cursor: pointer;
     align-self: stretch;
     color: var(--brandcolor-brand-black-white-black);
     font-family: "Inter-Regular", Helvetica;
@@ -47,6 +48,7 @@
     width: 119px;
 }
 .main-header .text-wrapper-2 {
+cursor: pointer;
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -60,6 +62,7 @@ white-space: nowrap;
 width: 57px;}
 
 .main-header .text-wrapper-3 {
+cursor: pointer;
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -73,6 +76,7 @@ white-space: nowrap;
 width: 53px;}
 
 .main-header .text-wrapper-4 {
+     cursor: pointer;
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Regular", Helvetica;
@@ -136,66 +140,5 @@ position: relative;
 white-space: nowrap;
 width: fit-content;}
 
-@media (max-width: 900px) {
-  .main-header .div {
-    width: 98vw;
-    padding: 16px 2vw;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .main-header .navbar,
-  .main-header .depth-main-header {
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .main-header .text-wrapper,
-  .main-header .text-wrapper-2,
-  .main-header .text-wrapper-3,
-  .main-header .text-wrapper-4,
-  .main-header .text-wrapper-5,
-  .main-header .text-wrapper-6 {
-    font-size: 14px;
-    width: auto;
-    min-width: 48px;
-    padding: 0 4px;
-  }
-  .main-header .div-wrapper-2 {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-  .main-header .layer {
-    width: 100px;
-    height: 24px;
-  }
-}
 
-@media (max-width: 600px) {
-  .main-header {
-    padding: 0;
-  }
-  .main-header .div {
-    width: 100vw;
-    padding: 8px 0;
-    flex-direction: column;   /* כל ילד בשורה נפרדת */
-    gap: 8px;
-    align-items: center;
-  }
-  .main-header .navbar,
-  .main-header .depth-main-header {
-    width: 100%;
-    gap: 8px;
-    flex-direction: row;      /* כל כפתורי הניווט בשורה */
-    align-items: center;
-    justify-content: center;
-  }
-  .main-header .div-wrapper-2 {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 13px;
-  }
-  .main-header .layer {
-    width: 80px;
-    height: 18px;
-  }
-}
+

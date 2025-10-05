@@ -23,21 +23,20 @@ function App() {
 
   return (
     <>
- 
-      <Header></Header>
-      <Banner></Banner>
-      <Benefits></Benefits>
-      <Logos></Logos>
-      <Demos></Demos>
-      <Dialogue></Dialogue>
-      <FreeFeatures></FreeFeatures> 
-      <FeatureHighlight /> 
-      <PlansAndPricing />
-      <AddOns></AddOns>
-      <SupportIntro></SupportIntro>
-      <Support></Support>
-      <Footer></Footer>
-      <Policy></Policy>
+ <Header />
+<Banner id="banner" />
+<Benefits id="benefits" />
+<Logos id="logos" />
+<section id="demos"><Demos/></section>
+<Dialogue id="dialogue" />
+<section  id="freefeatures"><FreeFeatures/></section>
+<section  id="whyus"><FeatureHighlight/></section>
+<section  id="pricing"><PlansAndPricing/></section>
+<AddOns id="addons" />
+<SupportIntro id="supportIntro" />
+<section  id="support"><Support/></section>
+<Footer id="footer" />
+<Policy id="policy" />
       </>
 
   )
