@@ -11,7 +11,7 @@ export const Header = () => {
 
 
 
-  <div className="main-header">
+    <div className="main-header">
 
 <div className="div">
 <img className="layer" alt="Layer" src={"yemotlogo.png"} />
@@ -28,13 +28,13 @@ export const Header = () => {
 <div className="text-wrapper-5">Log in</div>
 </div>
 
-<div className="div-wrapper-2">
-<div className="text-wrapper-6" onClick={() => alert("fh")}>Start Free</div>
-</div>
-</div>
-</div>
-</div>
-</>
+          <div className="div-wrapper-2">
+            <div className="text-wrapper-6" onClick={() => alert("fh")}>Start Free</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
 
   );
 };

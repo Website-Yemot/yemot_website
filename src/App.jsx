@@ -19,7 +19,6 @@ import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
