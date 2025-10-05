@@ -7,9 +7,14 @@ import '@fontsource/inter/500.css';
 import '@fontsource/inter/700.css';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export const Support = () => {
-    const currentHour = new Date().getHours();
-    const showAnimation = currentHour >= 9 && currentHour < 20;
-     const showAnimationUSA  = currentHour >= 14 && currentHour < 20;
+    const israelHour = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Jerusalem',
+        hour: 'numeric',
+        hour12: false
+    }).format(new Date());
+
+    const showAnimation = israelHour >= 9 && israelHour < 20;
+    const showAnimationUSA = israelHour >= 14 && israelHour < 20;
     return (
         <div className="AllSupport">
             <div className="support-containerA">
@@ -32,15 +37,15 @@ export const Support = () => {
 
                     <div className="offices">
                         <div className="office-card">
-                             {showAnimationUSA && (
-                            <div className="lottie-wrapper">
-                                <DotLottieReact
-                                    src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
-                                    loop
-                                    autoplay
-                                />
-                            </div>
-                               )}
+                            {showAnimationUSA && (
+                                <div className="lottie-wrapper">
+                                    <DotLottieReact
+                                        src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
+                                        loop
+                                        autoplay
+                                    />
+                                </div>
+                            )}
                             <div className="flag-wrapper">
                                 <img src="/Support/USA.png" alt="USA Flag" className="flag" />
                             </div>
@@ -95,15 +100,15 @@ export const Support = () => {
                         </div>
 
                         <div className="office-card">
-                             {showAnimation && (
-                            <div className="lottie-wrapper">
-                                <DotLottieReact
-                                    src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
-                                    loop
-                                    autoplay
-                                />
-                            </div>
-                               )}
+                            {showAnimation && (
+                                <div className="lottie-wrapper">
+                                    <DotLottieReact
+                                        src="https://lottie.host/e706ba3a-75b9-402a-83ee-d49b17462a88/P29csvQ47Z.lottie"
+                                        loop
+                                        autoplay
+                                    />
+                                </div>
+                            )}
                             <div className="flag-wrapper">
                                 <img src="/Support/Israel.png" alt="Israel Flag" className="flag" />
                             </div>
