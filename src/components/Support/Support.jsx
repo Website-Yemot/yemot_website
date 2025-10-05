@@ -91,10 +91,6 @@ export const Support = () => {
                                         <p>Sun - Thu:</p>
                                         <p>9am - 5pm</p>
                                     </div>
-                                    <div className="day-range">
-                                        <p>Fri:</p>
-                                        <p>9am - 1pm</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,10 +117,6 @@ export const Support = () => {
                                     <div className="day-range">
                                         <p>Sun - Thu:</p>
                                         <p>9am - 8pm</p>
-                                    </div>
-                                    <div className="day-range">
-                                        <p>Fri:</p>
-                                        <p>9am - 1pm</p>
                                     </div>
                                 </div>
                             </div>
