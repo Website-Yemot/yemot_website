@@ -104,8 +104,8 @@ flex: 0 0 auto;
 flex-direction: column;
 position: relative;}
 
-main-header .text-wrapper-5 {
- 
+.main-header .text-wrapper-5 {
+cursor: pointer;
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Medium", Helvetica;

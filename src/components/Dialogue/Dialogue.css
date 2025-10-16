@@ -8,7 +8,7 @@
   display: flex;              
   justify-content: center;    
   align-items: center; 
-  
+   z-index: 1;
 }
 
 .dialogue {
@@ -33,11 +33,15 @@ width: 100%;
   color: white;
   text-align: center;
 
+/*   
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  z-index: 10; */
 }
 
-
 .element {
-  top: 0px;
+  margin-top: 0px;
   width: 808px;
   max-width: 100%;
   height: auto;
