@@ -17,7 +17,7 @@ import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
 import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
-
+import { Login } from './Popups/Login'
 function App() {
 
   return (
@@ -36,6 +36,7 @@ function App() {
 <section  id="support"><Support/></section>
 <Footer id="footer" />
 <Policy id="policy" />
+{/* <Login /> */}
       </>
 
   )

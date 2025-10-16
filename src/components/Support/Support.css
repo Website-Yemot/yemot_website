@@ -202,56 +202,6 @@
     font-weight: 500;
     line-height: 21px;
 }
-<<<<<<< HEAD
-@media (max-width: 768px) {
-  .support-containerA {
-    padding: 40px 0;
-    gap: 32px;
-  }
-  .support-titleA p {
-    font-size: 28px;
-  }
-  .offices {
-    flex-direction: column;
-    width: 100%;
-    gap: 16px;
-  }
-  .office-card {
-    padding: 16px;
-    gap: 16px;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contact-section {
-    gap: 32px;
-  }
-  .contact-buttons {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    align-items: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .support-titleA p {
-    font-size: 20px;
-  }
-  .office-card {
-    padding: 10px;
-    gap: 10px;
-    max-width: 95vw;
-  }
-  .title-phone p,
-  .title-phone a {
-    font-size: 16px;
-  }
-  .day-range p {
-    font-size: 12px;
-  }
-}
-=======
 
 @media (max-width: 768px) {
     .support-containerA {
@@ -309,4 +259,3 @@
         font-size: 12px;
     }
 }
->>>>>>> 8f527bd48abc118b93fb36a2345ba2d63ce2c959
