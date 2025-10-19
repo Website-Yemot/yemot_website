@@ -21,14 +21,13 @@
   padding: 40px;
   position: relative;
   width: 1080px;
-
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
 .login-content {
-  align-items: flex-start;
+  align-items: center;
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0px 0px 40px #00000014;
@@ -89,6 +88,7 @@
 }
 
 .login-link {
+    cursor: pointer;
   color: #6800cf;
   font-family: var(--popup-link-font-family);
   font-size: var(--popup-link-font-size);
@@ -99,7 +99,7 @@
 }
 
 .login-form {
-  align-items: flex-start;
+  align-items: center;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -108,8 +108,7 @@
 }
 
 .login-field {
-  align-items: flex-start;
-  align-self: stretch;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -117,7 +116,6 @@
 }
 
 .login-label {
-  align-self: stretch;
   color: var(--website-color-color-black-white-black);
   font-family: var(--popup-h3-font-family);
   font-size: var(--popup-h3-font-size);
@@ -126,20 +124,23 @@
   letter-spacing: var(--popup-h3-letter-spacing);
   line-height: var(--popup-h3-line-height);
   margin-top: -1px;
+  text-align: center;
 }
 
 .login-input {
   align-items: center;
-  align-self: stretch;
+  justify-content: center;
   border: 1px solid var(--website-color-color-black-white-black);
   border-radius: 8px;
   display: flex;
   gap: 10px;
-  padding: 16px;
+  padding: 16px; 
   width: 100%;
+  max-width: 364px;
 }
 
 .login-input-field {
+  
   color: var(--website-color-color-grey-200);
   font-family: var(--popup-form-field-font-family);
   font-size: var(--popup-form-field-font-size);
@@ -171,17 +172,15 @@
 }
 
 .login-actions {
-  align-items: center;
-  align-self: stretch;
   display: flex;
-  justify-content: center;
-    width: 100%;
+  justify-content: center; 
+  align-items: center;      
+  width: 100%;
   margin-top: 32px;
 }
 
 .login-button {
   all: unset;
-  align-items: center;
   background-color: var(--website-color-color-primary-400);
   border-radius: 32px;
   box-sizing: border-box;
@@ -190,6 +189,7 @@
   justify-content: center;
   padding: 18px 24px;
   width: 100%;
+  max-width: 398px;
   cursor: pointer;
 }
 

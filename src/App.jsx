@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './styleguide.css'
-import { FeatureHighlight } from './components/FeatureHighlight/FeatureHighlight.JSX'
+import { FeatureHighlight } from './components/FeatureHighlight/FeatureHighlight'
 import { PlansAndPricing } from './components/PlansAndPricing/PlansAndPricing'
 import { AddOns } from './components/AddOns/AddOns'
 import { SupportIntro } from './components/Support/SupportIntro'
@@ -36,7 +36,6 @@ function App() {
 <section  id="support"><Support/></section>
 <Footer id="footer" />
 <Policy id="policy" />
-{/* <Login /> */}
       </>
 
   )

@@ -40,7 +40,7 @@ dialog.style.transform = `translate3d(0, ${-easedProgress * 100}%, 0)`;
   return (
     <div   className="dialogue_wrapper">
       {/* <div ref={dialogRef} className="dialogue"> */}
-     <div ref={dialogRef} className="dialogue"> 
+     <div  className="dialogue"> 
               <DotLottieReact className="element"
       src="https://lottie.host/8b994981-f657-4bf1-88c1-b289cda8c78e/FpfsVhohjo.lottie"
       loop
