@@ -17,27 +17,29 @@ import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
 import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
+import { Login } from './Popups/Login'
 import { EarlyAccess } from './components/Popups/EarlyAccess/EarlyAccess'
 function App() {
 
   return (
     <>
-      <EarlyAccess />
-      <Header />
-      <Banner id="banner" />
-      <Benefits id="benefits" />
-      <Logos id="logos" />
-      <section id="demos"><Demos /></section>
-      <Dialogue id="dialogue" />
-      <section id="freefeatures"><FreeFeatures /></section>
-      <section id="whyus"><FeatureHighlight /></section>
-      <section id="pricing"><PlansAndPricing /></section>
-      <AddOns id="addons" />
-      <SupportIntro id="supportIntro" />
-      <section id="support"><Support /></section>
-      <Footer id="footer" />
-      <Policy id="policy" />
-    </>
+ <Header />
+<Banner id="banner" />
+<Benefits id="benefits" />
+<Logos id="logos" />
+<section id="demos"><Demos/></section>
+<Dialogue id="dialogue" />
+<section  id="freefeatures"><FreeFeatures/></section>
+<section  id="whyus"><FeatureHighlight/></section>
+<section  id="pricing"><PlansAndPricing/></section>
+<AddOns id="addons" />
+<SupportIntro id="supportIntro" />
+<section  id="support"><Support/></section>
+<Footer id="footer" />
+<Policy id="policy" />
+ {/* <EarlyAccess /> */}
+{/* <Login /> */}
+      </>
 
   )
 }

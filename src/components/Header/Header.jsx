@@ -1,5 +1,6 @@
 import './main-header.css'
-
+import { Login } from '../../Popups/Login'
+import { useState } from 'react'
   const scrollToSection = (id) => {
   const element = document.getElementById(id);
   if (element) {
@@ -7,9 +8,9 @@ import './main-header.css'
   }
 };
 export const Header = () => {
+    const [showLogin, setShowLogin] = useState(false);
+
   return (<>
-
-
 
     <div className="main-header">
 
@@ -25,7 +26,7 @@ export const Header = () => {
 </div>
 <div className="depth-main-header">
 <div className="div-wrapper">
-<div className="text-wrapper-5">Log in</div>
+<div className="text-wrapper-5"  onClick={() => setShowLogin(true)}>Log in</div>
 </div>
 
           <div className="div-wrapper-2">
@@ -34,6 +35,9 @@ export const Header = () => {
         </div>
       </div>
     </div>
+          {showLogin && (
+            <Login onClose={() => setShowLogin(false)} />
+      )}
   </>
 
   );
