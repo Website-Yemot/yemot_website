@@ -1,5 +1,4 @@
-import React from "react";
-import './plansAndPricing.css'
+import './PlansAndPricing.css'
 import '@fontsource/poppins/600.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/400.css';
