@@ -1,0 +1,114 @@
+.popup-overlay {
+    position: fixed;
+  top: 0;
+  left: 0;
+background: rgba(0, 0, 0, 0.64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+    width: 1915px;
+    height: 941px;
+    flex-shrink: 0;
+    aspect-ratio: 1915/941;
+}
+
+.popup {
+    /* background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease; */
+    display: flex;
+    width: 406px;
+    height: 396px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.32);
+    position: relative
+}
+
+#XmarkPopups {
+    position: absolute;
+    right: 12px;
+    top: 12.5px;
+    width: 24px;
+    height: 24px;
+}
+
+.popup-icon {
+    border-radius: 64px;
+    background: rgba(202, 249, 255, 0.66);
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+}
+
+#CheckmarkG {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1/1;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.a{
+    color: var(--Color-black_white-black, #000);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    align-self: stretch;
+}
+
+.b {
+    color: var(--Color-grey-400, #76767E);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    align-self: stretch;
+}
+
+.popup-button {
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--Color-primary-400, #8B3DFF);
+
+    color: var(--Color-black_white-white, #FFF);
+    font-feature-settings: 'dlig' on;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.popup-button:hover {
+    background-color: #4b00b5;
+}
