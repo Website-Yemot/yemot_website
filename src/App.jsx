@@ -17,7 +17,7 @@ import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
 import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
-import { Login } from './Popups/Login'
+import { HireABuilder } from './components/Popups/HireABuilder'
 import { EarlyAccess } from './components/Popups/EarlyAccess/EarlyAccess'
 function App() {
 
@@ -37,7 +37,7 @@ function App() {
 <section  id="support"><Support/></section>
 <Footer id="footer" />
 <Policy id="policy" />
- {/* <EarlyAccess /> */}
+{/* <HireABuilder /> */}
       </>
 
   )

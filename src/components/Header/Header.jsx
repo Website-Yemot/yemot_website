@@ -1,5 +1,5 @@
 import './main-header.css'
-import { Login } from '../../Popups/Login'
+import { Login } from '../Popups/Login'
 import { useState } from 'react'
   const scrollToSection = (id) => {
   const element = document.getElementById(id);
