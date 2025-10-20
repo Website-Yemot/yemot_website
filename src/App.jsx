@@ -23,22 +23,22 @@ function App() {
 
   return (
     <>
- <Header />
-<Banner id="banner" />
-<Benefits id="benefits" />
-<Logos id="logos" />
-<section id="demos"><Demos/></section>
-<Dialogue id="dialogue" />
-<section  id="freefeatures"><FreeFeatures/></section>
-<section  id="whyus"><FeatureHighlight/></section>
-<section  id="pricing"><PlansAndPricing/></section>
-<AddOns id="addons" />
-<SupportIntro id="supportIntro" />
-<section  id="support"><Support/></section>
-<Footer id="footer" />
-<Policy id="policy" />
- {/* <EarlyAccess /> */}
-      </>
+      <Header />
+      <Banner id="banner" />
+      <Benefits id="benefits" />
+      <Logos id="logos" />
+      <section id="demos"><Demos /></section>
+      <Dialogue id="dialogue" />
+      <section id="freefeatures"><FreeFeatures /></section>
+      <section id="whyus"><FeatureHighlight /></section>
+      <section id="pricing"><PlansAndPricing /></section>
+      <AddOns id="addons" />
+      <SupportIntro id="supportIntro" />
+      <section id="support"><Support /></section>
+      <Footer id="footer" />
+      <Policy id="policy" />
+      {/* <EarlyAccess /> */}
+    </>
 
   )
 }
