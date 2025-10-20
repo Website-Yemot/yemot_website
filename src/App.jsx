@@ -17,30 +17,13 @@ import { Demos } from './components/Demos/Demos'
 import { Dialogue } from './components/Dialogue/Dialogue'
 import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
-import { HireABuilder } from './components/Popups/HireABuilder'
+import { HireABuilder } from './components/Popups/HireABuilder/HireABuilder'
 import { EarlyAccess } from './components/Popups/EarlyAccess/EarlyAccess'
 function App() {
 
   return (
     <>
-<<<<<<< HEAD
- <Header />
-<Banner id="banner" />
-<Benefits id="benefits" />
-<Logos id="logos" />
-<section id="demos"><Demos/></section>
-<Dialogue id="dialogue" />
-<section  id="freefeatures"><FreeFeatures/></section>
-<section  id="whyus"><FeatureHighlight/></section>
-<section  id="pricing"><PlansAndPricing/></section>
-<AddOns id="addons" />
-<SupportIntro id="supportIntro" />
-<section  id="support"><Support/></section>
-<Footer id="footer" />
-<Policy id="policy" />
-{/* <HireABuilder /> */}
-      </>
-=======
+
       <Header />
       <Banner id="banner" />
       <Benefits id="benefits" />
@@ -55,9 +38,7 @@ function App() {
       <section id="support"><Support /></section>
       <Footer id="footer" />
       <Policy id="policy" />
-      {/* <EarlyAccess /> */}
     </>
->>>>>>> db47a1a763a22f26b2415666a4f8c36c427843df
 
   )
 }

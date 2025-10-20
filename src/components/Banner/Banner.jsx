@@ -1,7 +1,7 @@
 import './Banner.css'
 import { useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { HireABuilder } from '../Popups/HireABuilder';
+import { HireABuilder } from '../Popups/HireABuilder/HireABuilder';
 
 export const Banner = () => {
   const [showHire, setShowHire] = useState(false);

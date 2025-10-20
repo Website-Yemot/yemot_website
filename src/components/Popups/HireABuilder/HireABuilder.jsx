@@ -1,5 +1,5 @@
 import './HireABuilder.css';
-import hireImg from '../Popups/hireImg.png';
+import hireImg from '../HireABuilder/hireImg.png';
 export const HireABuilder = ({ onClose }) => {
   return (
     <div className="hire-overlay" onClick={onClose}>
