@@ -132,6 +132,7 @@ align-self: stretch;
 }
 
 #contact-btn {
+    cursor: pointer;
     color: var(--brandcolor-brand-secondary-400);
     font-feature-settings: 'dlig' on;
     font-family: Inter;
