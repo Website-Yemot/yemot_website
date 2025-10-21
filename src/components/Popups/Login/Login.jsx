@@ -22,7 +22,8 @@ export const Login = ({ onClose, onFirstLogin }) => {
       // בעתיד: לשנות שיגיע למערכת (redirect / dashboard)
       // לדוגמה:
       // window.location.href = "/dashboard";
-      window.location.href = "/dashboard";
+      onClose();
+
     }
     onClose();
   }
