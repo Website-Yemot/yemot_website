@@ -17,13 +17,12 @@ export const Login = ({ onClose, onFirstLogin }) => {
       // const data = await response.json();
       // const isFirstLogin = data.isFirstLogin;
       localStorage.setItem("hasLoggedIn", "true");
-      onFirstLogin(); // פותח את EarlyAccessSignup
+      onFirstLogin();
     } else {
       // בעתיד: לשנות שיגיע למערכת (redirect / dashboard)
       // לדוגמה:
       // window.location.href = "/dashboard";
       onClose();
-
     }
     onClose();
   }

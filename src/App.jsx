@@ -26,51 +26,27 @@ function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [showEarlyAccessSignup, setShowEarlyAccessSignup] = useState(false);
   const [showEarlyAccess, setShowEarlyAccess] = useState(false);
-  // 👇 נבדוק אם זו הפעם הראשונה של המשתמש
   const handleLoginSuccess = () => {
-    const isFirstTime = !localStorage.getItem('hasLoggedInBefore');
-    if (isFirstTime) {
-      setShowLogin(false);
-      setShowEarlyAccessSignup(true);
-      localStorage.setItem('hasLoggedInBefore', 'true');
-    } else {
-      console.log('User logged in - returning user');
-    }
+    setShowLogin(false);
+    setShowEarlyAccessSignup(true);
   };
 
-  // 👇 כשלוחצים "Sign up for early access"
   const handleEarlyAccessSubmit = () => {
     setShowEarlyAccessSignup(false);
     setShowEarlyAccess(true);
   };
-
   return (
     <>
       <Header onLoginClick={() => setShowLogin(true)} />
-{showEarlyAccessSignup &&<EarlyAccessSignup
-  onClose={() => setShowEarlyAccessSignup(false)}
-  onSubmit={handleEarlyAccessSubmit}
-/>}
-{showLogin && <Login
-  onClose={() => setShowLogin(false)}
-  onFirstLogin={handleLoginSuccess}
-/>
-}
-
-      {/* {showLogin && (
-        <Login
-          onClose={() => setShowLogin(false)}
-          onFirstLogin={() => setShowEarlyAccessSignup(true)}
-        />
-      )}
-
-      {showEarlyAccessSignup && (
-        <EarlyAccessSignup
-          onClose={() => setShowEarlyAccessSignup(false)}
-          onSubmit={() => setShowEarlyAccess(true)}
-        />
-      )} */}
-
+      {showEarlyAccessSignup && <EarlyAccessSignup
+        onClose={() => setShowEarlyAccessSignup(false)}
+        onSubmit={handleEarlyAccessSubmit}
+      />}
+      {showLogin && <Login
+        onClose={() => setShowLogin(false)}
+        onFirstLogin={handleLoginSuccess}
+      />
+      }
       {showEarlyAccess && (
         <EarlyAccess onClose={() => setShowEarlyAccess(false)} />
       )}

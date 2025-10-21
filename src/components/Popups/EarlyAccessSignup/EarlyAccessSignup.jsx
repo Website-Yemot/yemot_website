@@ -1,15 +1,10 @@
 import './EarlyAccessSignup.css';
 
 export const EarlyAccessSignup = ({ onClose, onSubmit }) => {
-//       const handleSubmit = (e) => {
-//     e.preventDefault();
-//     onSubmit(); // פותח את EarlyAccess
-//     onClose();
-//   }
- const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(); // נקרא לפונקציה מהורה
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSubmit();
+    };
     return (
         <div className="signup-overlay" onClick={onClose}>
             <div className="signup-container" onClick={(e) => e.stopPropagation()}>
