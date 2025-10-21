@@ -19,6 +19,7 @@ import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
 import { Login } from './Popups/Login'
 import { EarlyAccess } from './components/Popups/EarlyAccess/EarlyAccess'
+import { EarlyAccessSignup } from './components/Popups/EarlyAccessSignup/EarlyAccessSignup'
 function App() {
 
   return (

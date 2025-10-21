@@ -1,12 +1,12 @@
 .popup-overlay {
     position: fixed;
-  top: 0;
-  left: 0;
-background: rgba(0, 0, 0, 0.64);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
     width: 1915px;
     height: 941px;
     flex-shrink: 0;
@@ -14,14 +14,6 @@ background: rgba(0, 0, 0, 0.64);
 }
 
 .popup {
-    /* background: white;
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.3s ease; */
     display: flex;
     width: 406px;
     height: 396px;
@@ -30,22 +22,23 @@ background: rgba(0, 0, 0, 0.64);
     align-items: center;
     gap: 40px;
     border-radius: 24px;
-    background: #FFF;
+    background: var(--brandcolor-brand-black-white-white);
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.32);
-    position: relative
+    position: relative;
 }
 
 #XmarkPopups {
     position: absolute;
-    right: 12px;
-    top: 12.5px;
+    right: 10px;
+    top: 10px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .popup-icon {
     border-radius: 64px;
-    background: rgba(202, 249, 255, 0.66);
+    background: var(--brandcolor-brand-accent-100);
     display: flex;
     padding: 16px;
     align-items: center;
@@ -66,27 +59,27 @@ background: rgba(0, 0, 0, 0.64);
     align-self: stretch;
 }
 
-.a{
-    color: var(--Color-black_white-black, #000);
+.a {
+    color: var(--brandcolor-brand-black-white-black);
     text-align: center;
     font-feature-settings: 'dlig' on;
-    font-family: Poppins;
-    font-size: 32px;
+    font-family: var(--popup-h2-font-family);
+    font-size: var(--popup-h2-font-size);
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
+    font-weight: var(--popup-h2-font-weight);
+    line-height: var(--popup-h2-line-height);
     align-self: stretch;
 }
 
 .b {
-    color: var(--Color-grey-400, #76767E);
+    color: var(--brandcolor-brand-grey-400);
     text-align: center;
     font-feature-settings: 'dlig' on;
-    font-family: Inter;
-    font-size: 18px;
+    font-family: var(--popup-body-2-font-family);
+    font-size: var(--popup-body-2-font-size);
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    font-weight: var(--popup-paragraph-font-weight);
+    line-height: var(--popup-body-2-line-height);
     align-self: stretch;
 }
 
@@ -98,15 +91,15 @@ background: rgba(0, 0, 0, 0.64);
     gap: 10px;
     align-self: stretch;
     border-radius: 32px;
-    background: var(--Color-primary-400, #8B3DFF);
+    background: var(--website-color-color-primary-400);
 
-    color: var(--Color-black_white-white, #FFF);
+    color: var(--website-color-color-black-white-white);
     font-feature-settings: 'dlig' on;
-    font-family: Inter;
-    font-size: 16px;
+    font-family: var(--popup-link-font-family);
+    font-size: var(--popup-link-font-size);
     font-style: normal;
-    font-weight: 600;
-    line-height: 100%;
+    font-weight: var(--popup-link-font-weight);
+    line-height: var(--popup-link-line-height);
 }
 
 .popup-button:hover {
