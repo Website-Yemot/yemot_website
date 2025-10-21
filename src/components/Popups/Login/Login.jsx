@@ -1,9 +1,9 @@
 import './Login.css';
 import { useState } from 'react';
-import person1 from '../Popups/person1.png';
-import person2 from '../Popups/person2.png';
-import person3 from '../Popups/person3.png';
-import xIcon from '../Popups/xIcon.png';
+import person1 from '../Login/person1.png';
+import person2 from '../Login/person2.png';
+import person3 from '../Login/person3.png';
+import xIcon from '../Login/xIcon.png';
 
 export const Login = ({ onClose }) => {
   const [showPassword, setShowPassword] = useState(false);

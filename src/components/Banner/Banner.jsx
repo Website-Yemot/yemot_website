@@ -1,7 +1,10 @@
 import './Banner.css'
+import { useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { HireABuilder } from '../Popups/HireABuilder/HireABuilder';
 
 export const Banner = () => {
+  const [showHire, setShowHire] = useState(false);
   return (
 
 <div className="banner">
@@ -41,10 +44,11 @@ with unlimited core features and channels.
 <div className="p">Build your free phone system</div>
 </div>
 
-<div className="div-wrapper-2">
+<div className="div-wrapper-2" onClick={() => setShowHire(true)}>
 <div className="text-wrapper-4">Build it for me</div>
 </div>
 </div>
+{showHire && <HireABuilder onClose={() => setShowHire(false)} />}
 </div>
 
 <div className="image-wrapper">

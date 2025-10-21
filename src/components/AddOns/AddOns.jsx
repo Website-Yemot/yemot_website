@@ -1,6 +1,14 @@
 import React from "react";
 import './AddOns.css';
 import '@fontsource/poppins/600.css';
+
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export const AddOns = () => {
     const addons = [
         {
@@ -98,7 +106,7 @@ export const AddOns = () => {
                             </h3>
                         </div>
                         <div className="btn">
-                            <a id="contact-btn">Contact Support</a>
+                            <a id="contact-btn" onClick={() => scrollToSection("support")}>Contact Support</a>
                         </div>
                     </div>
                 </div>

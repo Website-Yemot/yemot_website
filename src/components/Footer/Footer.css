@@ -64,6 +64,7 @@ width: 160px;}
 
 .footer .text-wrapper-3 {
 color: #ffffff;
+cursor: pointer;
 font-family: "Poppins-Regular", Helvetica;
 font-size: 16px;
 font-weight: 400;

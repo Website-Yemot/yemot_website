@@ -1,5 +1,10 @@
 import "./Footer.css";
-
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 export const Footer = () => {
   return (
     <div className="footer">
@@ -17,20 +22,20 @@ export const Footer = () => {
 
         <div className="div-2">
           <div className="text-wrapper-2">Product</div>
-          <div className="text-wrapper-3">Phone Systems</div>
-          <div className="text-wrapper-3">Features</div>
+          <div className="text-wrapper-3" onClick={() => scrollToSection("demos")}>Phone Systems</div>
+          <div className="text-wrapper-3" onClick={() => scrollToSection("freefeatures")}>Features</div>
         </div>
 
         <div className="div-2">
           <div className="text-wrapper-2">Solutions</div>
-          <div className="text-wrapper-3">Why us</div>
-          <div className="text-wrapper-3">Pricing</div>
+          <div className="text-wrapper-3" onClick={() => scrollToSection("whyus")}>Why us</div>
+          <div className="text-wrapper-3"onClick={() => scrollToSection("pricing")}>Pricing</div>
         </div>
 
         <div className="div-2">
           <div className="text-wrapper-2">Get in touch</div>
-          <div className="text-wrapper-3">Contact</div>
-          <div className="text-wrapper-3">Support</div>
+          <div className="text-wrapper-3"onClick={() => scrollToSection("support")}>Contact</div>
+          <div className="text-wrapper-3" onClick={() => scrollToSection("support")}>Support</div>
         </div>
       </div>
     </div>
