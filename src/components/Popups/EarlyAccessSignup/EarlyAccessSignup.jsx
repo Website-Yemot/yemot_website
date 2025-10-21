@@ -1,11 +1,15 @@
 import './EarlyAccessSignup.css';
-import '@fontsource/poppins/600.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/600.css';
-import '@fontsource/inter/700.css';
 
-export const EarlyAccessSignup = ({ onClose }) => {
+export const EarlyAccessSignup = ({ onClose, onSubmit }) => {
+//       const handleSubmit = (e) => {
+//     e.preventDefault();
+//     onSubmit(); // פותח את EarlyAccess
+//     onClose();
+//   }
+ const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(); // נקרא לפונקציה מהורה
+  };
     return (
         <div className="signup-overlay" onClick={onClose}>
             <div className="signup-container" onClick={(e) => e.stopPropagation()}>
@@ -19,7 +23,7 @@ export const EarlyAccessSignup = ({ onClose }) => {
                             Experience our beloved app like never before with its sleek, user-friendly redesign.
                         </div>
                     </div>
-                    <form className="signup-form">
+                    <form className="signup-form" onSubmit={handleSubmit}>
                         <div className='signup-email'>
                             <label className="signup-label">Email:</label>
                             <input
