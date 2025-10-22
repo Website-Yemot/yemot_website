@@ -6,10 +6,10 @@ import person3 from '../Login/person3.png';
 import xIcon from '../Login/xIcon.png';
 
 export const Login = ({ onClose, onFirstLogin }) => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [phone, setPhone] = useState('');
-  const [password, setPassword] = useState('');
-  const [touched, setTouched] = useState({ phone: false, password: false });
+const [showPassword, setShowPassword] = useState(false);
+const [phone, setPhone] = useState('');
+const [password, setPassword] = useState('');
+const [touched, setTouched] = useState({ phone: false, password: false });
 
   const handleLoginClick = (e) => {
     e.preventDefault();
@@ -146,9 +146,9 @@ const isFormValid = phone.trim() !== '' && password.trim() !== '';
 
         {/* RIGHT SIDE */}
         <div className="login-images">
-          <button className="x-box" onClick={onClose} aria-label="Close">
-            <img className="X-icon" alt="X icon" src={xIcon} />
-          </button>
+         <button className="hire-close" onClick={onClose} aria-label="Close">
+          ✕
+        </button>
 
           <div className="person1">
             <div className="person1-border1">
