@@ -9,7 +9,7 @@ export const EarlyAccess = ({ onClose }) => {
     return (
         <div className="popup-overlay" onClick={onClose}>
             <div className="popup" onClick={e => e.stopPropagation()}>
-                <img src="/XmarkPopups.svg" alt="close" id="XmarkPopups" onClick={onClose} style={{ cursor: 'pointer' }} />
+                <img src="/XmarkPopups.svg" alt="close" id="XmarkPopups" onClick={onClose} />
                 <div className="popup-icon">
                     <img src="/CheckmarkG.svg" alt="" id="CheckmarkG" />
                 </div>

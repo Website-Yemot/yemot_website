@@ -19,12 +19,37 @@ import { Footer } from './components/Footer/Footer'
 import { Policy } from './components/PolicyBar/Policy'
 import { HireABuilder } from './components/Popups/HireABuilder/HireABuilder'
 import { EarlyAccess } from './components/Popups/EarlyAccess/EarlyAccess'
-function App() {
+import { EarlyAccessSignup } from './components/Popups/EarlyAccessSignup/EarlyAccessSignup'
+import { Login } from './components/Popups/Login/Login';
 
+function App() {
+  const [showLogin, setShowLogin] = useState(false);
+  const [showEarlyAccessSignup, setShowEarlyAccessSignup] = useState(false);
+  const [showEarlyAccess, setShowEarlyAccess] = useState(false);
+  const handleLoginSuccess = () => {
+    setShowLogin(false);
+    setShowEarlyAccessSignup(true);
+  };
+
+  const handleEarlyAccessSubmit = () => {
+    setShowEarlyAccessSignup(false);
+    setShowEarlyAccess(true);
+  };
   return (
     <>
-
-      <Header />
+      <Header onLoginClick={() => setShowLogin(true)} />
+      {showEarlyAccessSignup && <EarlyAccessSignup
+        onClose={() => setShowEarlyAccessSignup(false)}
+        onSubmit={handleEarlyAccessSubmit}
+      />}
+      {showLogin && <Login
+        onClose={() => setShowLogin(false)}
+        onFirstLogin={handleLoginSuccess}
+      />
+      }
+      {showEarlyAccess && (
+        <EarlyAccess onClose={() => setShowEarlyAccess(false)} />
+      )}
       <Banner id="banner" />
       <Benefits id="benefits" />
       <Logos id="logos" />

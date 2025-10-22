@@ -7,7 +7,7 @@ import { useState } from 'react'
     element.scrollIntoView({ behavior: "smooth" });
   }
 };
-export const Header = () => {
+export const Header = ({ onLoginClick }) => {
     const [showLogin, setShowLogin] = useState(false);
 
   return (<>
@@ -26,7 +26,7 @@ export const Header = () => {
 </div>
 <div className="depth-main-header">
 <div className="div-wrapper">
-<div className="text-wrapper-5"  onClick={() => setShowLogin(true)}>Log in</div>
+<div className="text-wrapper-5"  onClick={onLoginClick}>Log in</div>
 </div>
 
           <div className="div-wrapper-2">
