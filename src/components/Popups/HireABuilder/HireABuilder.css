@@ -266,4 +266,7 @@ width: 537px;
 }
 
 
-
+.text-wrapper-5.error::placeholder {
+  color: red;
+  opacity: 1;
+}

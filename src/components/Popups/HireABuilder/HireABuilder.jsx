@@ -1,6 +1,55 @@
 import './HireABuilder.css';
 import hireImg from '../HireABuilder/hireImg.png';
+import { useState } from 'react';
+
 export const HireABuilder = ({ onClose }) => {
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [description, setDescription] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState('');
+
+  // State למעקב אחרי האם המשתמש נגע בשדות
+  const [touched, setTouched] = useState({
+    email: false,
+    phone: false,
+    description: false,
+  });
+
+  const handleSubmit = async () => {
+    setLoading(true);
+    setMessage('');
+
+    try {
+      const response = await fetch('/.netlify/functions/sendToMonday', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, phone, description }),
+      });
+
+      const data = await response.json();
+      if (data.errors) {
+        setMessage('❌ Failed to send data. Please try again.');
+        console.error(data.errors);
+      } else {
+        setMessage('✅ Your message was sent successfully!');
+        setEmail('');
+        setPhone('');
+        setDescription('');
+        setTouched({ email: false, phone: false, description: false });
+      }
+    } catch (error) {
+      console.error('Error sending data:', error);
+      setMessage('❌ Error connecting to the server.');
+    }
+
+    setLoading(false);
+  };
+
+  const isFormValid = () => {
+    return email.trim() !== '' && phone.trim() !== '' && description.trim() !== '';
+  };
+
   return (
     <div className="hire-overlay" onClick={onClose}>
       <div className="hire" onClick={(e) => e.stopPropagation()}>
@@ -28,10 +77,13 @@ export const HireABuilder = ({ onClose }) => {
             <div className="input-info">
               <div className="lables">Email :</div>
               <div className="div-wrapper-input">
-              <input
+                <input
                   type="email"
-                  className="text-wrapper-5"
-                  placeholder="|Type your email here"
+                  className={`text-wrapper-5 ${touched.email && email.trim() === '' ? 'error' : ''}`}
+                  placeholder="| Type your email here"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onBlur={() => setTouched({ ...touched, email: true })}
                   required
                 />
               </div>
@@ -40,30 +92,42 @@ export const HireABuilder = ({ onClose }) => {
             <div className="input-info">
               <div className="lables">Phone number :</div>
               <div className="div-wrapper-input">
-              <input
+                <input
                   type="tel"
-                  className="text-wrapper-5"
-                  placeholder="|Type your phone number"
-                  pattern="[0-9]*"
-                  inputMode="numeric"
-                />              
+                  className={`text-wrapper-5 ${touched.phone && phone.trim() === '' ? 'error' : ''}`}
+                  placeholder="| Type your phone number"
+                  value={phone}
+                  onChange={(e) => {
+                    const val = e.target.value.replace(/\D/g, ''); // רק מספרים
+                    setPhone(val);
+                  }}
+                  onBlur={() => setTouched({ ...touched, phone: true })}
+                />
               </div>
             </div>
 
             <div className="input-info">
               <p className="lables">Describe what's on your mind :</p>
               <div className="div-wrapper-input">
-   <textarea
-      className="text-wrapper-5"
-      placeholder="|Type anything here :)"
-      rows="3"
-    />              </div>
+                <textarea
+                  className={`text-wrapper-5 ${touched.description && description.trim() === '' ? 'error' : ''}`}
+                  placeholder="| Type anything here :)"
+                  rows="3"
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                  onBlur={() => setTouched({ ...touched, description: true })}
+                />
+              </div>
             </div>
           </div>
 
-          <button className="button">
-            <div className="sumbit-hire">Get back to me!</div>
+          <button className="button" onClick={handleSubmit} disabled={loading || !isFormValid()}>
+            <div className="sumbit-hire">
+              {loading ? 'Sending...' : 'Get back to me!'}
+            </div>
           </button>
+
+          {message && <p className="response-message">{message}</p>}
         </div>
 
         <div className="image-hire">
@@ -72,7 +136,7 @@ export const HireABuilder = ({ onClose }) => {
             <div className="frame-4" />
             <div className="frame-5" />
           </div>
-          <img className="image" alt="Image" src={hireImg} />
+          <img className="image" alt="Hire us" src={hireImg} />
         </div>
       </div>
     </div>
