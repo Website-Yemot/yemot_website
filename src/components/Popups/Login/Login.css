@@ -367,6 +367,12 @@ display: flex;
   display: flex;
 }
 
+.login-input-field.error::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+
 
 
 

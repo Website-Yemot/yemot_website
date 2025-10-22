@@ -36,7 +36,7 @@ export const HireABuilder = ({ onClose }) => {
         setEmail('');
         setPhone('');
         setDescription('');
-        setTouched({ email: false, phone: false, description: false });
+        setTouched({ email: true, phone: true, description: true });
       }
     } catch (error) {
       console.error('Error sending data:', error);
