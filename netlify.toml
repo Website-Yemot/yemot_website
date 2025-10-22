@@ -7,6 +7,9 @@
   command = "npm start"
   port = 3000
 
+[functions]
+  directory = "netlify/functions"
+  
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
