@@ -1,5 +1,5 @@
 .hire-overlay {
-  position: fixed;
+  position: fixed !important;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
@@ -7,7 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000;
+  z-index: 9999;
+  transform: none !important;
 }
 
 .hire {
@@ -21,6 +22,7 @@ padding: 40px;
 position: relative;
 width: 1200px;
 height: 780px;
+  z-index: 10000;
 
 }
 

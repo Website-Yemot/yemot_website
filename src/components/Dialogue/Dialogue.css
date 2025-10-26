@@ -1,9 +1,8 @@
-.dialogue_wrapper {
+ .dialogue_wrapper {
   width: 100vw;  
   background-color: #fafafa; 
   position: relative;
   padding: 60px 0;
-  /* margin-top: -120px; */
   margin-left: calc(50% - 50vw);
   display: flex;              
   justify-content: center;    
@@ -21,7 +20,6 @@ gap: 32px;
 height: 676px;
 justify-content: flex-start;
 padding: 7px 64px 64px;
-/* position: relative; */
 max-width: 1200px;
 width: 100%;
 
@@ -32,13 +30,7 @@ width: 100%;
   margin: auto;
   color: white;
   text-align: center;
-
-/*   
-  transform: translateY(100%);
-  opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  z-index: 10; */
-}
+} 
 
 .element {
   margin-top: 0px;
