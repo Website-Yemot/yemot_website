@@ -4,7 +4,13 @@ import '@fontsource/inter/600.css';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/900.css';
+import { useState } from 'react';
+
+import { HireABuilder } from '../Popups/HireABuilder/HireABuilder';
+
 export const PlansAndPricing = () => {
+      const [showHire, setShowHire] = useState(false);
+
     return (
         <div className="AllP">
         <div className="section-containerp">
@@ -88,12 +94,13 @@ export const PlansAndPricing = () => {
                         <div>
                         <div className="plan">Done For You</div>
                         <div className="pricep">Custom</div></div>
-                        <a className="outline" id="outlineDoneForYou" href="#calc">Start Calculation</a>
+                        <a className="outline" id="outlineDoneForYou" href="#calc" onClick={() => setShowHire(true)}>Start Calculation</a>
                     </div>
                     <p className="desc">Our expert team will build your perfect phone system for you. Just tell us your requirements, select your desired features, and we'll handle the rest. Starting from only $15.</p>
                 </article>
 
             </div>
+            {showHire && <HireABuilder onClose={() => setShowHire(false)} />}
         </div>
         </div>
     );
