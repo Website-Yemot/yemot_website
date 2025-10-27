@@ -89,7 +89,7 @@ export const Support = () => {
                                 <div className="hours-days-wrapper">
                                     <div className="day-range">
                                         <p>Sun - Thu:</p>
-                                        <p>9am - 5pm</p>
+                                        <p>9am - 6pm</p>
                                     </div>
                                 </div>
                             </div>
