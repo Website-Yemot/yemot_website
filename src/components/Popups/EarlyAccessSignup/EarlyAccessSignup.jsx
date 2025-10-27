@@ -5,6 +5,9 @@ export const EarlyAccessSignup = ({ onClose, onSubmit, extraButton }) => {
         e.preventDefault();
         onSubmit();
     };
+    const handleOldAppRedirect = () => {
+        window.location.href = 'https://call2all.co.il/SignUp/init?configCode=ivr2_10_23&site=ymta';
+    };
     return (
         <div className="signup-overlay" onClick={onClose}>
             <div className="signup-container" onClick={(e) => e.stopPropagation()}>
@@ -31,7 +34,7 @@ export const EarlyAccessSignup = ({ onClose, onSubmit, extraButton }) => {
                             Sign up for early access
                         </button>
                         {extraButton && (
-                            <button type="button" className="create-account-button" onClick={extraButton.onClick}>
+                            <button type="button" className="create-account-button" onClick={handleOldAppRedirect}>
                                 Create account with old app
                             </button>
                         )}
