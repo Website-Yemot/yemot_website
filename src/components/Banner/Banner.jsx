@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { HireABuilder } from '../Popups/HireABuilder/HireABuilder';
 import ReactDOM from 'react-dom';
+import { EarlyAccessSignup } from '../Popups/EarlyAccessSignup/EarlyAccessSignup';
 
 export const Banner = () => {
   const [showHire, setShowHire] = useState(false);
+  const [showCreateAccount, setShowCreateAccount] = useState(false);
   return (
 
 <div className="banner">
@@ -42,7 +44,7 @@ with unlimited core features and channels.
 </div>
 <div className="div-4">
 <div className="div-wrapper">
-<div className="p">Build your free phone system</div>
+<div className="p" onClick={() => setShowCreateAccount(true)}>Build your free phone system</div>
 </div>
 
 <div className="div-wrapper-2" onClick={() => setShowHire(true)}>
@@ -52,7 +54,13 @@ with unlimited core features and channels.
 {showHire && ReactDOM.createPortal(
   <HireABuilder onClose={() => setShowHire(false)} />,
   document.body
-)}</div>
+)}
+  {showCreateAccount && <EarlyAccessSignup
+      onClose={() => setShowCreateAccount(false)}
+      onSubmit={() => setShowCreateAccount(false)}
+      extraButton
+    />}
+</div>
 
 <div className="image-wrapper">
 <img className="image" alt="Image" src={"Hero_Screen.png"} />
