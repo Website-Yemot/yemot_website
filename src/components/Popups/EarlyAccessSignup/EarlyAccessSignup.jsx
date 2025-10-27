@@ -1,6 +1,6 @@
 import './EarlyAccessSignup.css';
 
-export const EarlyAccessSignup = ({ onClose, onSubmit }) => {
+export const EarlyAccessSignup = ({ onClose, onSubmit, extraButton }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit();
@@ -30,6 +30,11 @@ export const EarlyAccessSignup = ({ onClose, onSubmit }) => {
                         <button type="submit" className="signup-button">
                             Sign up for early access
                         </button>
+                        {extraButton && (
+                            <button type="button" className="create-account-button" onClick={extraButton.onClick}>
+                                Create account with old app
+                            </button>
+                        )}
                     </form>
                 </div>
                 <div className="background-wrapper">
@@ -40,10 +45,9 @@ export const EarlyAccessSignup = ({ onClose, onSubmit }) => {
                         </div>
                         <div className="background3">
                         </div>
-                    </div>
-                    <div className="signup-image">
-                        <img src={"Hero_Screen.png"} alt="App preview" />
-                    </div>
+                    </div></div>
+                <div className="signup-image">
+                    <img src={"Hero_Screen.png"} alt="App preview" />
                 </div>
             </div>
         </div>
