@@ -1,70 +1,68 @@
-import React, { useEffect, useState } from 'react';
-// import Lottie from 'lottie-react';
-// import supportAnimation from './support-animation.json'; 
-
+import React, { useEffect, useRef, useState } from 'react';
 import './SupportIntro.css';
 import '@fontsource/poppins/600.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-// import { motion } from 'framer-motion';
-// import { useInView } from 'react-intersection-observer';
-
+import { motion, useAnimation } from "framer-motion";
 export const SupportIntro = () => {
-//    const [rotation, setRotation] = useState(0);
-//   const [lastX, setLastX] = useState(null);
-//    const [animationDone, setAnimationDone] = useState(false);
-//   const maxRotation = 180; // אפשר לשנות לזווית אחרת
+    const ref = useRef(null);
+    const controls = useAnimation();
+    const [hasAnimated, setHasAnimated] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    controls.start("visible");
+                    setHasAnimated(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.4 }
+        );
 
-//    useEffect(() => {
-//     const handleMouseMove = (e) => {
-//       if (animationDone) return;
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, [controls, hasAnimated]);
 
-//       if (lastX !== null) {
-//         const dx = e.clientX - lastX;
-//         const newRotation = rotation + dx * 0.5; // מהירות סיבוב
-//         if (newRotation >= maxRotation) {
-//           setRotation(maxRotation);
-//           setAnimationDone(true);
-//         } else {
-//           setRotation(newRotation);
-//         }
-//       }
-//       setLastX(e.clientX);
-//     };
-
-//     const stopTracking = () => {
-//       setLastX(null);
-//     };
-
-//     window.addEventListener('mousemove', handleMouseMove);
-//     window.addEventListener('mouseup', stopTracking);
-
-//     return () => {
-//       window.removeEventListener('mousemove', handleMouseMove);
-//       window.removeEventListener('mouseup', stopTracking);
-//     };
-//   }, [lastX, rotation, animationDone]);
-
-
+    const halfSpinFrom180 = {
+        hidden: {
+            rotate: 180,
+            opacity: 0,
+            y: 100,
+            x: -80,
+            scale: 0.9,
+        },
+        visible: {
+            rotate: 360,
+            opacity: 1,
+            y: 0,
+            x: 0,
+            scale: 1,
+            transition: {
+                duration: 1.5,
+                ease: "easeInOut",
+            },
+        },
+    };
     return (
-        <div className="support">
+        <div className="support" ref={ref}>
             <div className="support-intro">
 
                 <h5 className="support-subtitle">10+ hours a day</h5>
                 <h1 className="support-title">We are here to help.</h1>
 
-                {/* <motion.div
-                    animate={{ rotate: rotation }}
-                    transition={{ type: 'tween', ease: 'easeOut', duration: 0.3 }}
-                    style={{ display: 'inline-block' }}
-                > */}
+                <motion.div
+                    className="phones"
+                    initial="hidden"
+                    animate={controls}
+                    variants={halfSpinFrom180}
+                >
                     <DotLottieReact
-                        className="phones"
                         src="https://lottie.host/169704cf-584b-4837-96de-aa660075cff3/dwu9cESGBI.lottie"
                         loop
                         autoplay
                     />
-                {/* </motion.div> */}
+                </motion.div>
             </div>
         </div>
     );
