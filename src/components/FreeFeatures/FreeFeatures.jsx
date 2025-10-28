@@ -41,16 +41,26 @@ export const FreeFeatures = () => {
                 <p className="section-titleFF">Unlimited usage of <span className="highlight">free features</span> the list goes on and on</p>
             </div>
             <div className="features-wrapperFF">
-                <div className="features-rowFF scroll-leftF">
-                    <div className="features-rowFF">
-                        {row1.map((item, idx) => <FeatureCard key={idx} {...item} />)}
-                        {row1.map((item, idx) => <FeatureCard key={`dup-${idx}`} {...item} />)}
+                <div className="features-viewportFF">
+                    <div className="marqueeFF">
+                        <div className="marquee__groupFF">
+                            <div className="marquee__spacerFF" aria-hidden="true" />
+                            {row1.map((item, idx) => <FeatureCard key={`r1-a-${idx}`} {...item} />)}
+                        </div>
+                        <div className="marquee__groupFF" aria-hidden="true">
+                            <div className="marquee__spacerFF" aria-hidden="true" />
+                            {row1.map((item, idx) => <FeatureCard key={`r1-b-${idx}`} {...item} />)}
+                        </div>
                     </div>
                 </div>
-                <div className="features-rowFF scroll-rightF">
-                    <div className="features-rowFF">
-                        {row2.map((item, idx) => <FeatureCard key={idx} {...item} />)}
-                        {row2.map((item, idx) => <FeatureCard key={`dup-${idx}`} {...item} />)}
+                <div className="features-viewportFF">
+                    <div className="marqueeFF reverse">
+                        <div className="marquee__groupFF">
+                            {row2.map((item, idx) => <FeatureCard key={`r2-a-${idx}`} {...item} />)}
+                        </div>
+                        <div className="marquee__groupFF" aria-hidden="true">
+                            {row2.map((item, idx) => <FeatureCard key={`r2-b-${idx}`} {...item} />)}
+                        </div>
                     </div>
                 </div>
             </div>
