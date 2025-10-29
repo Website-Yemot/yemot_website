@@ -191,6 +191,7 @@ gap: 10px;
 justify-content: center;
 padding: 18px 24px;
 position: relative;
+margin-top: 16px;
 width: 100%;}
 
 .hire .sumbit-hire {
@@ -273,3 +274,10 @@ width: 537px;
   transition: 0.2s;
 
 }
+
+form {
+  all: unset;
+  display: block;
+  width: 100%;
+}
+

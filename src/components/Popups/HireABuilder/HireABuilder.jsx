@@ -16,6 +16,20 @@ export const HireABuilder = ({ onClose }) => {
     description: false,
   });
 
+  // === כאן השינוי: טופס שמבצע בדיקת תקינות אמיתית ===
+  const handleSub = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    // אם המייל לא תקין — תוצג הודעת שגיאה מובנית של הדפדפן
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    handleSubmit(); // אם תקין — נמשיך כרגיל
+  };
+
   const handleSubmit = async () => {
     setLoading(true);
     setMessage('');
@@ -47,7 +61,11 @@ export const HireABuilder = ({ onClose }) => {
   };
 
   const isFormValid = () => {
-    return email.trim() !== '' && phone.trim() !== '' && description.trim() !== '';
+    return (
+      email.trim() !== '' &&
+      phone.trim() !== '' &&
+      description.trim() !== ''
+    );
   };
 
   return (
@@ -73,59 +91,87 @@ export const HireABuilder = ({ onClose }) => {
             </p>
           </div>
 
-          <div className="frame">
-            <div className="input-info">
-              <div className="lables">Email :</div>
-              <div className="div-wrapper-input">
-                <input
-                  type="email"
-                  className={`text-wrapper-5 ${touched.email && email.trim() === '' ? 'error' : ''}`}
-                  placeholder="| Type your email here"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  onBlur={() => setTouched({ ...touched, email: true })}
-                  required
-                />
+          {/* 👇 כאן עטפנו את כל השדות בתוך form אחד */}
+          <form onSubmit={handleSub}>
+            <div className="frame">
+              <div className="input-info">
+                <div className="lables">Email :</div>
+                <div className="div-wrapper-input">
+                  <input
+                    type="email"
+                    className={`text-wrapper-5 ${
+                      touched.email && email.trim() === '' ? 'error' : ''
+                    }`}
+                    placeholder="| Type your email here"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onBlur={() =>
+                      setTouched({ ...touched, email: true })
+                    }
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="input-info">
+                <div className="lables">Phone number :</div>
+                <div className="div-wrapper-input">
+                  <input
+                    type="tel"
+                    className={`text-wrapper-5 ${
+                      touched.phone && phone.trim() === '' ? 'error' : ''
+                    }`}
+                    placeholder="| Type your phone number"
+                    value={phone}
+                    onChange={(e) => {
+                      const val = e.target.value.replace(/\D/g, '');
+                      setPhone(val);
+                    }}
+                    onBlur={() =>
+                      setTouched({ ...touched, phone: true })
+                    }
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="input-info">
+                <p className="lables">
+                  Describe what's on your mind :
+                </p>
+                <div className="div-wrapper-input">
+                  <textarea
+                    className={`text-wrapper-5 ${
+                      touched.description &&
+                      description.trim() === ''
+                        ? 'error'
+                        : ''
+                    }`}
+                    placeholder="| Type anything here :)"
+                    rows="3"
+                    value={description}
+                    onChange={(e) =>
+                      setDescription(e.target.value)
+                    }
+                    onBlur={() =>
+                      setTouched({ ...touched, description: true })
+                    }
+                    required
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="input-info">
-              <div className="lables">Phone number :</div>
-              <div className="div-wrapper-input">
-                <input
-                  type="tel"
-                  className={`text-wrapper-5 ${touched.phone && phone.trim() === '' ? 'error' : ''}`}
-                  placeholder="| Type your phone number"
-                  value={phone}
-                  onChange={(e) => {
-                    const val = e.target.value.replace(/\D/g, ''); // רק מספרים
-                    setPhone(val);
-                  }}
-                  onBlur={() => setTouched({ ...touched, phone: true })}
-                />
+            <button
+              type="submit"
+              className="button"
+              disabled={loading || !isFormValid()}
+            >
+              <div className="sumbit-hire">
+                {loading ? 'Sending...' : 'Get back to me!'}
               </div>
-            </div>
-
-            <div className="input-info">
-              <p className="lables">Describe what's on your mind :</p>
-              <div className="div-wrapper-input">
-                <textarea
-                  className={`text-wrapper-5 ${touched.description && description.trim() === '' ? 'error' : ''}`}
-                  placeholder="| Type anything here :)"
-                  rows="3"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                  onBlur={() => setTouched({ ...touched, description: true })}
-                />
-              </div>
-            </div>
-          </div>
-
-          <button className="button" onClick={handleSubmit} disabled={loading || !isFormValid()}>
-            <div className="sumbit-hire">
-              {loading ? 'Sending...' : 'Get back to me!'}
-            </div>
-          </button>
+            </button>
+          </form>
 
           {message && <p className="response-message">{message}</p>}
         </div>

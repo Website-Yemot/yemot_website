@@ -54,7 +54,7 @@ function App() {
       <Benefits id="benefits" />
       <Logos id="logos" />
       <section id="demos"><Demos /></section>
-      <Dialogue id="dialogue" />
+      <section  id="dialogue"><Dialogue/></section>
       <section id="freefeatures"><FreeFeatures /></section>
       <section id="whyus"><FeatureHighlight /></section>
       <section id="pricing"><PlansAndPricing /></section>
