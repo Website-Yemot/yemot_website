@@ -55,14 +55,14 @@ function App() {
       <Logos id="logos" />
       <section id="demos"><Demos /></section>
       <section  id="dialogue"><Dialogue/></section>
-      <section id="freefeatures"><FreeFeatures /></section>
+      {/* <section id="freefeatures"><FreeFeatures /></section>
       <section id="whyus"><FeatureHighlight /></section>
       <section id="pricing"><PlansAndPricing /></section>
       <AddOns id="addons" />
       <SupportIntro id="supportIntro" />
       <section id="support"><Support /></section>
       <Footer id="footer" />
-      <Policy id="policy" />
+      <Policy id="policy" /> */}
     </>
 
   )

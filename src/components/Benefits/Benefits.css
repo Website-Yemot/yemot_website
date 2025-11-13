@@ -158,7 +158,7 @@ height: 430px;
     padding: 20px;         /* פחות padding כדי לחסוך מקום */
     box-sizing: border-box;
     width: 100vw;
-    height: auto;           /* גובה גמיש */
+    height: 230px;           /* גובה גמיש */
   }
 
   /* מאפסת את הסגנון הישן של .div */
