@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import "./Dialogue.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import imgS from './480-img.png';
+
 
 export const Dialogue = () => {
   const dialogRef = useRef(null);
@@ -49,7 +51,8 @@ useEffect(() => {
 }, []);
 
   return (
-    <div ref={dialogRef} id="dialogue" className="dialogue_wrapper">
+        // <div ref={dialogRef} id="dialogue" className="dialogue_wrapper">
+    <div  id="dialogue" className="dialogue_wrapper">
       <div className="dialogue">
         <DotLottieReact
           className="element"
@@ -57,6 +60,7 @@ useEffect(() => {
           loop
           autoplay
         />
+      <img src={imgS} alt="Logo" className="img_480"/>
 
         <div className="div">
           <p className="text-wrapper">And any other awesome phone system</p>

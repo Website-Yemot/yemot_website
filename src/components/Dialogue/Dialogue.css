@@ -9,7 +9,10 @@
   align-items: center; 
    z-index: 1;
 }
-
+.dialogue .img_480
+{
+display:none ;
+}
 .dialogue {
 align-items: center;
 background-color: var( --brandcolor-brand-tertiary-700-duplicate);
@@ -65,7 +68,7 @@ margin-top: -1.00px;
 position: relative;
 text-align: center;
 width: 516px;
-height: auto;}
+}
 
 .dialogue .if-you-can-imagine {
 color: var(--brandcolor-brand-tertiary-300);
@@ -80,3 +83,84 @@ margin-right: -51.00px;
 position: relative;
 text-align: center;
 width: 516px;}
+
+
+@media (max-width: 1024px)
+{
+  .dialogue_wrapper {
+      margin-left: 0 !important;
+  }
+
+  .dialogue 
+  {
+  margin-top: -220px; /* אם את עדיין צריכה את ההיסט */
+  width: 100%;        /* תופס את כל רוחב ההורה */
+  box-sizing: border-box; /* כולל את הפדינג בחישוב הרוחב */
+    max-width: calc(100% - 80px); /* 40px מכל צד */
+  padding: 0 40px;
+  height: inherit;
+  }
+}
+
+@media (max-width:768px)
+{
+
+  .dialogue 
+  {
+  margin-top: -260px; /* אם את עדיין צריכה את ההיסט */
+  }
+  .dialogue .text-wrapper {
+    text-align: center;
+    font-size: 32px;
+    line-height: 120%;
+      max-width: 400px; /* הגבלת רוחב כדי שהטקסט ישבור שורה */
+
+  }
+ .dialogue .if-you-can-imagine
+ {
+    text-align: center;
+    font-size: 32px;
+    line-height: 120%;
+ }
+}
+
+@media (max-width:480px)
+{
+.dialogue 
+{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: calc(100% - 40px);      /* תמיד ישאיר 20px מכל צד */
+    padding: 20px;                      /* רווח פנימי קטן */
+    box-sizing: border-box;             /* כולל padding בחישוב הרוחב */
+    height: auto;                       /* הגובה נשאר לפי תוכן */
+}
+  .element
+  {
+    display: none !important;
+  }
+  .dialogue .img_480
+{
+display:flex !important ;
+}
+
+  .dialogue .text-wrapper {
+text-align: center;
+  font-size: 17px;
+  line-height: 1.2;            /* קצת מרווח בין השורות */
+ width:100vw;                /* יתפוס את רוחב הקונטיינר */
+  max-width: 100%;             /* לא יחרוג מגבולות ההורה */
+  word-wrap: break-word;       /* נשבר מילה ארוכה אם צריך */
+  overflow-wrap: break-word;   /* תמיכה בדפדפנים חדשים */
+  }
+ .dialogue .if-you-can-imagine
+ {
+    text-align: center;
+    font-size: 17px;
+    line-height: 120%;
+ }
+}

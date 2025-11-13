@@ -7,7 +7,7 @@
   background: white;        
   display: flex;
   justify-content: center;  
-  z-index: 1000;            
+  z-index: 1000;
 }
 
 .main-header .div {
@@ -31,7 +31,6 @@
     flex: 0 0 auto;
     gap: 32px;
     justify-content: center;
-    position: relative;
 }
 .main-header .text-wrapper {
      cursor: pointer;
@@ -140,5 +139,139 @@ position: relative;
 white-space: nowrap;
 width: fit-content;}
 
+/* Hide hamburger on desktop */
+.hamburger-menu {
+  display: none;
+}
+
+/* ✅ Hide navbar on small screens */
+
+.sidebar {
+  position: fixed;
+  right: -300px; /* hidden default */
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 3000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  z-index: 69999; /* דוחף אותו מעל כל שאר האלמנטים */
+
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-item {
+  padding: 16px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+
+}
+
+.sidebar-close {
+  align-self: flex-end;
+  font-size: 28px;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  z-index: 2999;
+}
+
+.sidebar-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
+@media (max-width: 1024px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .main-header .layer {
+    left: 40px;
+}
+  .hamburger-menu {
+    display: flex;
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    right:  18px;
+    padding: 24px 0;
+    z-index: 9999; /* דוחף אותו מעל כל שאר האלמנטים */
+    position: absolute;
+position: fixed;
+  }
+
+  .main-header .div-wrapper-2
+  {
+    margin-right:69px;
+  }
+}
+
+@media (max-width: 480px) {
+
+   .main-header .div-wrapper-2
+  {
+    display: none;
+  }
+  .main-header .text-wrapper-5 {
+    right: 60px;
+    align-items: center;
+    border: 1px solid;
+    border-color: var( --brandcolor-brand-grey-200);
+    border-radius: 32px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 6px 14px;
+    position: relative;
+    top: 20px;
+
+  }
+
+  .sidebar {
+    width: 120px;
+  }
+
+  .sidebar-item {
+  padding: 14px 0;
+  font-size: 16px;
+
+}
+ .main-header .layer {
+    left: 14px;
+        width: 97.97px;
+        height: auto;
+        top: 24px;
+
+}
+
+.hamburger-menu {
+
+    padding: 20px 0;
+          top: 24px;
+
+  }
+
+  .main-header {
+      height: 100px;            
+  }
+}

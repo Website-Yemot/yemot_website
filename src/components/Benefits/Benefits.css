@@ -10,7 +10,8 @@ justify-content: space-between;
 padding: 40px 120px;
 position: relative;
 width: 800px;
-top:-60px}
+margin-top:-60px
+}
 
 
 .benefits .div-2 {
@@ -18,9 +19,9 @@ align-items: flex-start;
 display: inline-flex;
 flex: 0 0 auto;
 flex-direction: column;
-gap: 8px;
 justify-content: center;
-position: relative;}
+position: relative;
+}
 
 .benefits .text-wrapper {
 color: var( --brandcolor-brand-black-white-black);
@@ -49,37 +50,158 @@ width: fit-content;
  margin: 0;
   padding: 0;}
 
+@media (max-width: 1024px) and (min-width: 768px){
 
-  /* דוגמה לרספונסיביות ל-bar */
-/* filepath: c:\Users\TovaKleinkaufman\OneDrive - ימות המשיח\שולחן העבודה\Website\yemot\src\benefits.css */
-@media (max-width: 900px) {
-  .benefits .div {
-    width: 98vw;
-    padding: 24px 8vw;
+
+body, html {
+  margin: 0;
+}
+
+.benefits {
+     margin: 0; 
+    display: flex;
     flex-direction: column;
-    height: auto;
-    gap: 16px;
-  }
-  .benefits .div-2 {
     align-items: center;
+     width: 100vw;    
+     max-width: 100vw;     
+     
+}
+
+.benefits .div {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 22px;
+    padding: 0 ;
+    margin: 0;
+    padding: 40px 80px;
+    top:-60px;
+}
+
+  .benefits .text-wrapper {
+    font-size: 24px;           /* 👈 טיפה קטן */
+  }
+
+  .benefits .text-wrapper-2 {
+    font-size: 18px;
+  }
+.benefits .div-2 {
+    gap: 12px;           /* קצת יותר מרווח למובייל */
+}
+.benefits .div-2:not(:last-child) {
+  margin-right: 16px; /* רווח אופקי בין כל הקופסאות */
+}
+
+  
+}
+@media (max-width: 768px) and (min-width: 480px){
+   .benefits {
+    margin: 0; /* 👈 מסיר רווח חיצוני למעלה/למטה */
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px ;
+    box-sizing: border-box;
+     width: 100vw;           /* 👈 תופס את כל רוחב המסך */
+    max-width: 100vw;       /* 👈 מוודא שלא ייחתך */
+height: 430px;
+  }
+
+  /* מאפסת את הסגנון הישן של .div */
+  .benefits .div {
+     top: 160px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     width: 100%;
-    gap: 4px;
+    gap: 22px;
+    padding: 0;
+    margin: 0;
+    background: none !important; 
+
+  }
+
+  .benefits .div-2 {
+    all: unset; 
+    background-color: var(--brandcolor-brand-tertiary-100);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    justify-content: center;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    gap:8px;
+  }
+
+  .benefits .text-wrapper {
+    font-size: 24px;
+    
+  }
+
+ .benefits .div-2:not(:last-child) {
+    margin-right: 0 !important; /* 👈 מבטל את הרווח במובייל */
   }
 }
 
-@media (max-width: 600px) {
-  .benefits .div {
+
+@media (max-width: 480px) {
+   .benefits {
+    margin: 0; 
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;         /* פחות padding כדי לחסוך מקום */
+    box-sizing: border-box;
     width: 100vw;
-    padding: 16px 2vw;
-    border-radius: 12px;
-    top: -20px;
+    height: auto;           /* גובה גמיש */
   }
+
+  /* מאפסת את הסגנון הישן של .div */
+  .benefits .div {
+    top: -18px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    gap: 18px;              /* רווח קטן יותר בין div-2 */
+    padding: 0;
+    margin: 0;
+    background: none !important; 
+  }
+
+  /* כל כרטיס div-2 קטן יותר */
+  .benefits .div-2 {
+    all: unset; 
+    background-color: var(--brandcolor-brand-tertiary-100);
+    border-radius: 12px;     /* קטן יותר */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    justify-content: center;
+    padding: 16px;           /* פחות padding */
+    width: 100%;
+    box-sizing: border-box;
+    gap: 6px;                /* פחות gap */
+    font-size: 14px;          /* אפשר גם להקטין את הטקסט כאן אם רוצים */
+  }
+
+  /* מבטל margin נוסף למובייל */
+  .benefits .div-2:not(:last-child) {
+    margin-right: 0 !important; 
+  }
+
+  /* הטקסטים קטנים יותר */
   .benefits .text-wrapper {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
   }
+
   .benefits .text-wrapper-2 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
   }
 }

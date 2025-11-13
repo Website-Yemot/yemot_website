@@ -125,6 +125,16 @@ export const Demos = () => {
           {renderRow(items.slice(0, 3), 0)}
           {renderRow(items.slice(3, 6), 3)}
         </div>
+
+        <div className="cards-wrapper-768">
+          {renderRow(items.slice(0, 2), 0)}
+          {renderRow(items.slice(2, 4), 2)}
+            {renderRow(items.slice(4, 6), 4)}
+        </div>
+
+        <div className="cards-wrapper-480">
+  {items.map((item, i) => renderRow([item], i))}
+</div>
       </div>
     </div>
   );

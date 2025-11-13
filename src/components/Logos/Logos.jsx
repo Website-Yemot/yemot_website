@@ -62,39 +62,3 @@ export const Logos = () => {
 };
 
 
-// export const Logos = () => {
-//   return (
-//     <div className="logo">
-//       <div className="div">
-//         <p className="more-than">
-//           <span className="text-wrapper">More than </span>
-//           <span className="span">1,200,000 phone systems </span>
-//           <span className="text-wrapper">
-//             are operating across the world&nbsp;&nbsp;
-//           </span>
-//         </p>
-
-//         {/* שורה ראשונה - תזוז שמאלה */}
-//         <div className="logos-row scroll-left">
-//           {[image1, image2, image3, image4, image5].map((img, i) => (
-//             <div className="img-wrapper" key={i}>
-//               <img className="img" src={img} alt={`Logo ${i + 1}`} />
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* שורה שנייה - תזוז ימינה */}
-//         <div className="logos-row scroll-right">
-//           {[image6, image7, image8, image9, image10].map((img, i) => (
-//             <div className="img-wrapper" key={i + 5}>
-//               <img className="img" src={img} alt={`Logo ${i + 6}`} />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-
-//       <div className="rectangle" />
-//       <div className="rectangle-2" />
-//     </div>
-//   );
-// };

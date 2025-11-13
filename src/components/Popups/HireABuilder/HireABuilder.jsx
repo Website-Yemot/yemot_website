@@ -35,7 +35,8 @@ export const HireABuilder = ({ onClose }) => {
     setMessage('');
 
     try {
-      const response = await fetch('/.netlify/functions/sendToMonday', {
+      // const response = await fetch('/.netlify/functions/sendToMonday', {
+       const response = await fetch('http://localhost:5000/api/sendToMonday', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, phone, description }),
@@ -51,6 +52,10 @@ export const HireABuilder = ({ onClose }) => {
         setPhone('');
         setDescription('');
         setTouched({ email: true, phone: true, description: true });
+
+          setTimeout(() => {
+      onClose();
+    }, 1000);
       }
     } catch (error) {
       console.error('Error sending data:', error);
