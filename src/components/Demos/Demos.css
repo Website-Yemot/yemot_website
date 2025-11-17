@@ -210,6 +210,7 @@ text-align: left;
 @media (max-width: 768px)  {
   .demos .build-any-phone-wrapper
   {
+        margin-top: -20vw;
   max-width: 500px !important; /* או כל רוחב שמתאים לעיצוב */
   text-align: center;
   justify-content: center;
@@ -257,7 +258,7 @@ text-align: left;
   }
   .demos .build-any-phone
   {
-    margin-top: -60px;
+    margin-top: -40vw;
       font-size: 24px;
       padding: 40px;
       line-height:120%; /* רווח קבוע בפיקסלים */
