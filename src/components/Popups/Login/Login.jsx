@@ -143,12 +143,12 @@ const isFormValid = phone.trim() !== '' && password.trim() !== '';
             </div>
           </form>
         </div>
-
-        {/* RIGHT SIDE */}
-        <div className="login-images">
-         <button className="hire-close" onClick={onClose} aria-label="Close">
+<button className="hire-close" onClick={onClose} aria-label="Close">
           ✕
         </button>
+        {/* RIGHT SIDE */}
+        <div className="login-images">
+         
 
           <div className="person1">
             <div className="person1-border1">

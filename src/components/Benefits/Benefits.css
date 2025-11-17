@@ -163,7 +163,7 @@ height: 430px;
 
   /* מאפסת את הסגנון הישן של .div */
   .benefits .div {
-    top: -18px;
+    top: 32px;
     display: flex;
     flex-direction: column !important;
     justify-content: center !important;

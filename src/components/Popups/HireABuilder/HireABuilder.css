@@ -20,7 +20,7 @@ gap: 16px;
 overflow: hidden;
 padding: 40px;
 position: relative;
-width: 1200px;
+width: 60vw;
 height: 780px;
   z-index: 10000;
 
@@ -279,5 +279,88 @@ form {
   all: unset;
   display: block;
   width: 100%;
+}
+
+@media (max-width: 1024px)  {
+
+  .hire {
+    width: 90vw;           /* במקום 1200px */
+    height: auto;         /* שלא יכריח גובה */
+    padding: 24px;        /* במקום 40px */
+    gap: 12px;            /* מצמצם רווח בין צד ימין לשמאל */
+  }
+
+  .hire .left-side-hire {
+    padding: 32px;        /* במקום 64px */
+    gap: 20px;            /* כל התוכן צפוף טיפה */
+  }
+
+  .hire .hire-header {
+    font-size: calc(var(--popup-h1-font-size) * 0.85);
+    line-height: calc(var(--popup-h1-line-height) * 0.85);
+  }
+
+  .hire .we-ll-build-your,
+  .hire .hire-explaination-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .hire .input-info {
+    width: 100%;
+  }
+
+  .hire .div-wrapper-input {
+    padding: 12px; /* במקום 16px */
+  }
+
+  .hire .button {
+    padding: 14px 18px; /* כפתור קטן יותר */
+  }
+  .hire-close {
+    top:0;
+    right: 0;
+  }
+
+}
+@media (max-width: 768px)
+{
+   .hire
+   {
+    width: 80vw;
+   }
+  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image
+  {
+    display: none !important;
+  }
+  .hire .div-wrapper-input {
+width: 90%;
+  }
+  .hire .button {
+    width: 96%;
+
+  }
+
+
+}
+
+@media (max-width: 480px)
+{
+   .hire
+   {
+    width: 80vw;
+   }
+  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image
+  {
+    display: none !important;
+  }
+  .hire .div-wrapper-input {
+width: 85%;
+  }
+    .hire .button {
+    width: 94%;
+
+  }
+}
 }
 
