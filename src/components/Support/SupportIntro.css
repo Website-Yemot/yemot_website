@@ -1,11 +1,11 @@
-.support{
+.supportI{
    width: 100vw;
     margin-left: calc(50% - 50vw);
     background: rgba(230, 222, 255, 0.32);
 }
 .support-intro {
     display: flex;
-    width: 1920px;
+    width: 100%;
     padding: 120px 0 260px 0;
     flex-direction: column;
     justify-content: center;
@@ -49,55 +49,35 @@
     margin-bottom: -480px;
 }
 
-@media (max-width: 1280px) {
-  .support-intro {
-    width: 100%;
-    padding: 60px 0;
-    gap: 16px;
-    height: 300px;
-  }
+@media (max-width: 1024px) {
   .support-title {
     font-size: 48px;
-    line-height: 120%;
   }
-  .support-subtitle {
-    font-size: 28px;
-  }
-  .phones {
-    height: 260px;
-    margin-bottom: -250px;
+   .phones {
+    height: 360px;
+    margin-bottom: -400px;
   }
 }
 
 @media (max-width: 768px) {
   .support-intro {
-    width: 100%;
-    max-width: 100%;
-    padding: 40px 0 60px 0;
-    gap: 12px;
-     height: 140px;
+    padding-bottom: 230px;
+
+}
+}
+@media (max-width: 480px) {
+    .support-title {
+    font-size: 24px;
   }
-  .support-title {
-    font-size: 28px;
-    line-height: 120%;
-  }
+
   .support-subtitle {
     font-size: 16px;
   }
-  .phones {
-    height: 200px;
-    margin-bottom: -160px;
-  }
-}
-@media (max-width: 576px) {
   .support-intro {
-    padding: 24px 0 40px 0;
+    padding-top: 0px;
   }
-  .support-title {
-    font-size: 20px;
-  }
-  .phones {
+    .phones {
     height: 160px;
-    margin-bottom: -120px;
+    margin-bottom: -350px;
   }
-}
+ }

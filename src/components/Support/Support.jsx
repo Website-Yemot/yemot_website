@@ -19,8 +19,8 @@ export const Support = () => {
         <div className="AllSupport">
             <div className="support-containerA">
                 <div className="support-titleA">
-                    <p >No question is too small<br />
-                        Something something</p>
+                    <p >No question is too small <span className="longTitle"> <br />
+                        Something something</span></p>
                 </div>
                 <div className="contact-section">
                     <div className="contact-buttons">
@@ -59,10 +59,10 @@ export const Support = () => {
                                         <p>Sun - Thu:</p>
                                         <p>9am - 1pm</p>
                                     </div>
-                                    <div className="day-range">
+                                    {/* <div className="day-range">
                                         <p>Fri:</p>
                                         <p>9am - 1pm</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

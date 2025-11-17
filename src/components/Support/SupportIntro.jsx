@@ -45,7 +45,7 @@ export const SupportIntro = () => {
         },
     };
     return (
-        <div className="support" ref={ref}>
+        <div className="supportI" ref={ref}>
             <div className="support-intro">
 
                 <h5 className="support-subtitle">10+ hours a day</h5>

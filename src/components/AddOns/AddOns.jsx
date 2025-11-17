@@ -2,11 +2,11 @@ import React from "react";
 import './AddOns.css';
 import '@fontsource/poppins/600.css';
 
-  const scrollToSection = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
+const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
 };
 
 export const AddOns = () => {
@@ -50,68 +50,68 @@ export const AddOns = () => {
 
     return (
         <div className="AllA">
-        <div className="section-containerA">
-            <h2 className="section-titleA" id="titleA">Add-Ons</h2>
-            <div className="addons-cards">
-                <div className="addons-row">
-                    {addons.slice(0, 3).map((addon, index) => (
-                        <div key={index} className="addon-card">
-                            <div className="addon-content">
-                                <div className="icon">
-                                    <img src={addon.icon} alt="" className="addon-icon" />
-                                </div>
-                                <div className="addon-header">
-                                    <h3 className="addon-title">{addon.title}</h3>
-                                    <div className="addon-price-tag">
-                                        <span className="price">{addon.price}</span>
-                                        <div className="tag-container">
-                                            <span className="tag">{addon.tag}</span>
+            <div className="section-containerA">
+                <h2 className="section-titleA" id="titleA">Add-Ons</h2>
+                <div className="addons-cards">
+                    <div className="addons-row">
+                        {addons.slice(0, 3).map((addon, index) => (
+                            <div key={index} className="addon-card">
+                                <div className="addon-content">
+                                    <div className="icon">
+                                        <img src={addon.icon} alt="" className="addon-icon" />
+                                    </div>
+                                    <div className="addon-header">
+                                        <h3 className="addon-title">{addon.title}</h3>
+                                        <div className="addon-price-tag">
+                                            <span className="price">{addon.price}</span>
+                                            <div className="tag-container">
+                                                <span className="tag">{addon.tag}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <p className="addon-desc">{addon.desc}</p>
                             </div>
-                            <p className="addon-desc">{addon.desc}</p>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                <div className="addons-row">
-                    {addons.slice(3).map((addon, index) => (
-                        <div key={index + 3} className="addon-card">
-                            <div className="addon-content">
-                                <div className="icon">
-                                    <img src={addon.icon} alt="" className="addon-icon" />
-                                </div>
-                                <div className="addon-header">
-                                    <h3 className="addon-title">{addon.title}</h3>
-                                    <div className="addon-price-tag">
-                                        <span className="price">{addon.price}</span>
-                                        <div className="tag-container">
-                                            <span className="tag">{addon.tag}</span>
+                    <div className="addons-row">
+                        {addons.slice(3).map((addon, index) => (
+                            <div key={index + 3} className="addon-card">
+                                <div className="addon-content">
+                                    <div className="icon">
+                                        <img src={addon.icon} alt="" className="addon-icon" />
+                                    </div>
+                                    <div className="addon-header">
+                                        <h3 className="addon-title">{addon.title}</h3>
+                                        <div className="addon-price-tag">
+                                            <span className="price">{addon.price}</span>
+                                            <div className="tag-container">
+                                                <span className="tag">{addon.tag}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <p className="addon-desc">{addon.desc}</p>
                             </div>
-                            <p className="addon-desc">{addon.desc}</p>
-                        </div>
-                    ))}
+                        ))}
 
-                    <div className="addon-cardSupport-card">
-                        <div className="addon-content">
-                            <div className="icon">
-                                <img src="/plus.svg" alt="" className="addon-icon" />
+                        <div className="addon-cardSupport-card">
+                            <div className="addon-content">
+                                <div className="icon">
+                                    <img src="/plus.svg" alt="" className="addon-icon" />
+                                </div>
+                                <h3 className="addon-titleA">
+                                    And many other awesome add-ons for awesome phone systems
+                                </h3>
                             </div>
-                            <h3 className="addon-titleA">
-                                And many other awesome add-ons for awesome phone systems
-                            </h3>
-                        </div>
-                        <div className="btn">
-                            <a id="contact-btn" onClick={() => scrollToSection("support")}>Contact Support</a>
+                            <div className="btn">
+                                <a id="contact-btn" onClick={() => scrollToSection("support")}>Contact Support</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 };
