@@ -24,6 +24,7 @@ const row2 = [
     { title: 'Trivia & Games', desc: 'Interactive games for user engagement.', icon: '/FreeFeatures/Trivia & Games.svg', colorClass: 'color-teal' },
     { title: 'Phone Payments', desc: 'Accept credit card payments via phone.', icon: '/FreeFeatures/Phone Payments.svg', colorClass: 'color-lilac' },
 ];
+const combinedRows = [...row1, ...row2];
 const FeatureCard = ({ title, desc, icon, colorClass }) => (
     <div className={`feature-cardFF ${colorClass}`}>
         <div className={`iconFF ${colorClass}`}><img src={icon} alt={title} /></div>
@@ -35,38 +36,46 @@ const FeatureCard = ({ title, desc, icon, colorClass }) => (
 );
 export const FreeFeatures = () => {
     return (
-    <div className="AllFFF">
-        <div className="AllFF">
-            <div className="mainTitle">
-                <p className="section-titleFF">Unlimited usage of <span className="highlight">free features</span> the list goes on and on</p>
-            </div>
-            <div className="features-wrapperFF">
-                <div className="features-viewportFF">
-                    <div className="marqueeFF">
-                        <div className="marquee__groupFF">
-                            <div className="marquee__spacerFF" aria-hidden="true" />
-                            {row1.map((item, idx) => <FeatureCard key={`r1-a-${idx}`} {...item} />)}
+        <div className="AllFFF">
+            <div className="AllFF">
+                <div className="mainTitle">
+                    <p className="section-titleFF">Unlimited usage of <span className="highlight">free features</span> the list goes on and on</p>
+                </div>
+                <div className="features-wrapperFF">
+                    <div className="features-viewportFF desktop-only">
+                        <div className="marqueeFF">
+                            <div className="marquee__groupFF">
+                                {row1.map((item, idx) => <FeatureCard key={`r1-a-${idx}`} {...item} />)}
+                            </div>
+                            <div className="marquee__groupFF" aria-hidden="true">
+                                {row1.map((item, idx) => <FeatureCard key={`r1-b-${idx}`} {...item} />)}
+                            </div>
                         </div>
-                        <div className="marquee__groupFF" aria-hidden="true">
-                            <div className="marquee__spacerFF" aria-hidden="true" />
-                            {row1.map((item, idx) => <FeatureCard key={`r1-b-${idx}`} {...item} />)}
+                    </div>
+                    <div className="features-viewportFF desktop-only">
+                        <div className="marqueeFF reverse">
+                            <div className="marquee__groupFF">
+                                {row2.map((item, idx) => <FeatureCard key={`r2-a-${idx}`} {...item} />)}
+                            </div>
+                            <div className="marquee__groupFF" aria-hidden="true">
+                                {row2.map((item, idx) => <FeatureCard key={`r2-b-${idx}`} {...item} />)}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="features-viewportFF mobile-only">
+                        <div className="marqueeFF">
+                            <div className="marquee__groupFF">
+                                {combinedRows.map((item, idx) => <FeatureCard key={`all-${idx}`} {...item} />)}
+                            </div>
+                            <div className="marquee__groupFF" aria-hidden="true">
+                                {combinedRows.map((item, idx) => <FeatureCard key={`all2-${idx}`} {...item} />)}
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="features-viewportFF">
-                    <div className="marqueeFF reverse">
-                        <div className="marquee__groupFF">
-                            {row2.map((item, idx) => <FeatureCard key={`r2-a-${idx}`} {...item} />)}
-                        </div>
-                        <div className="marquee__groupFF" aria-hidden="true">
-                            {row2.map((item, idx) => <FeatureCard key={`r2-b-${idx}`} {...item} />)}
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
         </div>
-
-    </div>
     );
 };
