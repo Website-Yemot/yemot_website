@@ -284,15 +284,15 @@ form {
 @media (max-width: 1024px)  {
 
   .hire {
-    width: 90vw;           /* במקום 1200px */
-    height: auto;         /* שלא יכריח גובה */
-    padding: 24px;        /* במקום 40px */
-    gap: 12px;            /* מצמצם רווח בין צד ימין לשמאל */
+    width: 90vw;           
+    height: auto;         
+    padding: 24px;       
+    gap: 12px;            
   }
 
   .hire .left-side-hire {
-    padding: 32px;        /* במקום 64px */
-    gap: 20px;            /* כל התוכן צפוף טיפה */
+    padding: 32px;        
+    gap: 20px;            
   }
 
   .hire .hire-header {
@@ -311,11 +311,11 @@ form {
   }
 
   .hire .div-wrapper-input {
-    padding: 12px; /* במקום 16px */
+    padding: 12px; 
   }
 
   .hire .button {
-    padding: 14px 18px; /* כפתור קטן יותר */
+    padding: 14px 18px; 
   }
   .hire-close {
     top:0;
@@ -329,7 +329,7 @@ form {
    {
     width: 80vw;
    }
-  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image
+  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image-hire.image
   {
     display: none !important;
   }
@@ -350,7 +350,7 @@ width: 90%;
    {
     width: 80vw;
    }
-  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image
+  .image-hire,.frame-2,.frame-3,.frame-4,.frame-5,.image-hire.image
   {
     display: none !important;
   }

@@ -42,7 +42,7 @@ function App() {
         onClose={() => setShowEarlyAccessSignup(false)}
         onSubmit={handleEarlyAccessSubmit}
       />}
-      {showLogin && <Login
+      {showLogin && <Login id="login"
         onClose={() => setShowLogin(false)}
         onFirstLogin={handleLoginSuccess}
       />

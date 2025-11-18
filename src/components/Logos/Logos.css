@@ -166,7 +166,7 @@
   }
 }
  .logo .more-than {
-    margin-top: 12vw;
+    margin-top: 120px;
     font-size: 40px;
     line-height: 44px;
     max-width: 560px;
@@ -205,7 +205,7 @@
     width: 100vw;
   }
   .logo .more-than {
-    margin-top: 28vw;
+    margin-top: 120px;
     font-size: 32px;
     max-width: 520px;
     text-align: center;
@@ -233,8 +233,6 @@ font-style: normal;
 font-weight: 600;
 line-height: 120%;
 max-width: 98vw;
-  top:76px;
-  ;
   }
 
    

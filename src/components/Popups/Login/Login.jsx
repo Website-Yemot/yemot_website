@@ -147,8 +147,8 @@ const isFormValid = phone.trim() !== '' && password.trim() !== '';
           ✕
         </button>
         {/* RIGHT SIDE */}
-        <div className="login-images">
-         
+        <div className="Images-login">
+
 
           <div className="person1">
             <div className="person1-border1">
