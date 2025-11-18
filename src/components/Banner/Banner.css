@@ -203,14 +203,6 @@ width:  100%;
 }
 }
 
-@media (max-width: 1919px) {
- 
-  .banner {
-      margin-left: 0 !important;
-
-  }
-}
-
 @media (max-width: 1024px)  {
     
     /* הסתרת אלמנט ה-DotLottieReact */
