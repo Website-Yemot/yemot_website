@@ -119,6 +119,7 @@
 }
 
 .btn {
+    cursor: pointer;
     border-radius: 32px;
     border: 1px solid var(--brandcolor-brand-secondary-400);
     display: flex;
@@ -130,7 +131,6 @@
 }
 
 #contact-btn {
-    cursor: pointer;
     color: var(--brandcolor-brand-secondary-400);
     font-feature-settings: 'dlig' on;
     font-family: Inter;

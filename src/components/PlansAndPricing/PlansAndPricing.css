@@ -162,6 +162,11 @@
     background: var(--brandcolor-brand-secondary-400);
 }
 
+#outlineBasic:hover,
+#outlinePro:hover {
+    color: var(--brandcolor-brand-black-white-white);
+}
+
 #outlineDoneForYou {
     color: var(--brandcolor-brand-black-white-black);
     border-radius: 32px;

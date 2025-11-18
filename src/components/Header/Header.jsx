@@ -36,12 +36,12 @@ export const Header = ({ onLoginClick }) => {
           
 
           <div className="depth-main-header">
-            <div className="div-wrapper">
-              <div className="text-wrapper-5" onClick={onLoginClick}>Log in</div>
+            <div className="div-wrapper" onClick={onLoginClick}>
+              <div className="text-wrapper-5">Log in</div>
             </div>
 
-            <div className="div-wrapper-2">
-              <div className="text-wrapper-6" onClick={() => setShowCreateAccount(true)}>Start Free</div>
+            <div className="div-wrapper-2" onClick={() => setShowCreateAccount(true)}>
+              <div className="text-wrapper-6">Start Free</div>
             </div>
           </div>
         </div>
