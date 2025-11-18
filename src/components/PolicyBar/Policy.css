@@ -36,3 +36,23 @@ margin-top: -1.00px;
 position: relative;
 white-space: nowrap;
 width: fit-content;}
+
+   @media (max-width: 564px) {
+             .policy {
+                /* אפשור גלילה אופקית במיכל הראשי */
+                overflow-x: auto;
+                /* ביטול מרכוז כדי שהתוכן יתחיל משמאל/ימין ויהיה ניתן לגלול */
+                align-items: flex-start; 
+                /* מונע גלישה אנכית מיותרת */
+                overflow-y: hidden; 
+                
+                /* *** שינוי קריטי: הסרת ריפוד אופקי כדי שהתוכן יתחיל ממש מהקצה*** */
+              
+            }
+  
+           .policy .frame
+           {
+            width: 100%;
+            padding-left: 15px;
+           }
+        }
