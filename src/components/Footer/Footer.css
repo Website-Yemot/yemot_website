@@ -1,86 +1,142 @@
-.footer {
-background-color: #1d2939;
-display: flex;
-flex-direction: column;
-position: relative;
-gap: 30px;
-width: 100vw; 
-height: 280px;
-bottom: 0;   
-left: 0;
-z-index: 100;     
-padding: 40px 20px;
-margin-left: calc(50% - 50vw);
-}
 
-.footer .img {
-height: 32px;
-position: relative;
-}
+    .app-footer {
+      background-color: #1d2939;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* מרכוז תוכן */
+      position: relative;
+      gap: 40px;
+      
+      /* --- התיקון לרוחב מלא --- */
+      width: 100vw; /* רוחב מלא של ה-viewport */
+      margin-left: calc(50% - 50vw); /* קיזוז כדי לכסות שוליים של ההורה */
+      /* ------------------------- */
 
-.footer .text-wrapper {
-align-self: stretch;
-color: #ffffff;
-  text-align: left;
-font-family: "Inter-Regular", Helvetica;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0;
-line-height: 25.6px;
-position: relative;
-}
+      padding: 120px 20px 120px 20px;
+      color: white;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif; /* שימוש בפונט רגיל כברירת מחדל */
+      border-radius: 0;
+    }
 
-.footer .frame-2 {
-bottom: 100px;
-align-items: flex-start;
-display: inline-flex;
-flex: 0 0 auto;
-gap: 120px;
-justify-content: center;
-position: relative;
-margin-top:180px;}
+    .footer-content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px; /* רוחב מקסימלי לשולחן עבודה */
+      gap: 40px; 
+    }
 
-.footer .div-2 {
-align-items: flex-start;
-display: flex;
-flex-direction: column;
-gap: 32px;
-position: relative;
-}
+    .footer-logo-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      max-width: 350px; 
+    }
 
-.footer .text-wrapper-2 {
-color: #ffffff;
-  text-align: left;
-font-family: "Poppins-Bold", Helvetica;
-font-size: 16px;
-font-weight: 700;
-letter-spacing: 0;
-line-height: 19.2px;
-margin-top: -1.00px;
-position: relative;
-width: fit-content;
-white-space: normal; 
-width: 160px;}
+    .footer-logo-img {
+      height: 32px;
+      position: relative;
+    }
 
-.footer .text-wrapper-3 {
-color: #ffffff;
-cursor: pointer;
-font-family: "Poppins-Regular", Helvetica;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0;
-line-height: 19.2px;
-position: relative;
-white-space: nowrap;
-width: fit-content;
-width: 160px;
-text-align: left;
-}
+    .footer-description {
+      color: #ffffff;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 25.6px;
+      position: relative;
+    }
 
-.footer .logo-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: -300px; /* מזיז את כל הקבוצה שמאלה */
-  gap: 32px; /* רווח בין הלוגו לטקסט */
-}
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px; 
+      min-width: 150px; 
+    }
+
+    .footer-column-title {
+      color: #ffffff;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      margin-bottom: 8px; /* הפחתת רווח כדי לשמור על קומפקטיות */
+      position: relative;
+      width: fit-content;
+    }
+
+    .footer-link {
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      position: relative;
+      width: fit-content;
+      text-align: left;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+        color: #a0a0a0; /* צבע בהיר יותר בריחוף */
+    }
+
+    @media (max-width: 1024px) {
+        .footer-content-wrapper {
+            flex-wrap: nowrap; /* שינוי: מונע גלישה, שומר על הכל בשורה אחת */
+            justify-content: space-between; /* פיזור אלמנטים */
+            gap: 30px; /* שינוי: צמצום המרווח בין העמודות */
+        }
+        .footer-logo-block {
+            width: 250px; /* שינוי: רוחב מוגבל יותר כדי לאלץ שבירת שורה בטקסט התיאור */
+            margin-bottom: 0; 
+        }
+        .footer-column {
+            min-width: 100px; /* שינוי: צמצום רוחב מינימלי */
+            gap: 12px; /* צמצום רווח בתוך העמודה */
+        }
+    }
+   @media (max-width: 768px) {
+         .app-footer {
+            padding: 70px 20px; /* הגדלת ריפוד אנכי כדי להגדיל את גובה הפוטר */
+            gap: 40px;
+        }
+
+        .footer-content-wrapper {
+            flex-direction: row; 
+            flex-wrap: wrap; /* מאפשר גלישה לשורה חדשה */
+            justify-content: space-evenly; /* **תיקון: פיזור שווה של הבלוקים בשורה** */
+            gap: 50px 0px; /* רווח אנכי 50px, רווח אופקי מנוהל ע"י space-evenly */
+        }
+        
+        .footer-logo-block {
+            width: 100%; /* רוחב מלא לשורה העליונה */
+            max-width: 100%;
+            align-items: center; /* יישור למרכז */
+            margin-bottom: 20px;
+        }
+        
+        /* 3 הבלוקים הנותרים יסתדרו בשורה השנייה */
+        .footer-column {
+            width: 33%; /* 33% * 3. הרווחים יאפשרו להם להסתדר בשורה */
+            max-width: 33%;
+            min-width: unset; 
+            align-items: center; /* **תיקון: מרכוז הקישורים בתוך העמודה** */
+            text-align: center;
+        }
+        
+        /* תיקון יישור הקישורים בתוך העמודות הממורכזות */
+        .footer-column-title, .footer-link {
+            text-align: center;
+        }
+
+        .footer-description {
+            /* מבטיח שהתיאור יגלש ליותר שורות ברוחב הזה */
+            text-align: center; /* יישור הטקסט במרכז הבלוק */
+        }
+        
+              }
