@@ -581,14 +581,7 @@ html, body {
 
 
 
-@media (max-width: 1439px) and (min-width: 1366px) {
-  .banner .element-phones {
-    left: 72vw;
-    top: 12vh;
-    width: 32vw;
-    height: 22vh;
-  }
-}
+
 
 
 @media (max-width: 1365px) and (min-width: 1280px) {
@@ -609,3 +602,12 @@ html, body {
     height: 18vh;
   }
 } */
+
+ /* @media (max-width: 1439px) and (min-width: 1366px) {
+  .banner .element-phones {
+    left: 72vw;
+    top: 12vh;
+    width: 32vw;
+    height: 22vh;
+  }
+}  */
