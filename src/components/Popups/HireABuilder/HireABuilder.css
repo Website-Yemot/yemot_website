@@ -283,7 +283,20 @@ form {
 .button:hover{
     background-color: var(--brandcolor-brand-primary-500);
 }
+@media (min-width: 1024px) and (max-width: 1800px) {
 
+  .hire {
+    height: 600px !important;
+  }
+  .hire .left-side-hire {
+    gap:22px !important;
+
+  }
+  .hire .hire-header {
+    margin-top: -70.00px !important;
+
+  }
+}
 @media (max-width: 1024px)  {
 
   .hire {
