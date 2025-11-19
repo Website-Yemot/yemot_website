@@ -1,6 +1,6 @@
 .banner {
   width: 100vw;              
-  background-color: #fafafa; 
+  background-color: #fafafa;
   position: relative;
   padding: 160px 0;
   margin-left: calc(50% - 50vw);
@@ -18,7 +18,7 @@
   position: relative;
   margin-top: 70px;
 }
-
+ 
 .banner .element-phones {
  position: absolute;
   left: 54.1vw;
@@ -28,9 +28,9 @@
   max-width: 100vw;
   max-height: 100vh;
   min-width: 200px;
-  min-height: 150px; 
+  min-height: 150px;
 }
-
+ 
 .banner .div-2 {
   top:-22px;
 align-items: flex-start;
@@ -42,7 +42,7 @@ flex: 1;
 flex-direction: column;
 flex-grow: 1;
 position: relative;}
-
+ 
 .banner .div-3 {
   flex: 1;                  
   display: flex;
@@ -50,9 +50,9 @@ position: relative;}
   gap: 24px;
  align-items: center;    /* מרכז אופקי את כל התוכן */
   justify-content: center;/* מרכז אנכי אם יש גובה קבוע */
-  
+ 
 }
-
+ 
 .banner .transform-your {
   align-self: stretch;
   color: var(--brandcolor-brand-black-white-black);
@@ -60,11 +60,11 @@ position: relative;}
   font-size: 56px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.2;   
+  line-height: 1.2;  
   margin: 0;    
   text-align: left;   /* מיושר לשמאל */
 }
-
+ 
 .banner .build-powerful {
   align-self: stretch;
   color: var(--brandcolor-brand-grey-400);
@@ -72,26 +72,26 @@ position: relative;}
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.6;   
-  margin-top: 0px; 
+  line-height: 1.6;  
+  margin-top: 0px;
   text-align: left;   /* מיושר לשמאל */
-  
+ 
 }
-
+ 
 .banner .text-wrapper {
 color: #000000;}
-
+ 
 .banner .span {
 color: #8b3dff;}
-
+ 
 .banner .text-wrapper-2 {
 color: #76767e;}
-
+ 
 .banner .text-wrapper-3 {
 color: #000000;
 font-family: "Inter-SemiBold", Helvetica;
 font-weight: 600;}
-
+ 
 .banner .div-4 {
 align-items: center;
 align-self: stretch;
@@ -103,8 +103,8 @@ width: 100%;
 margin-top: 32px;
 align-items: center;        
 justify-content: flex-start;
-} 
-
+}
+ 
 .banner .div-wrapper {
 cursor: pointer;
 background-color: var(--brandcolor-brand-primary-400);
@@ -117,7 +117,7 @@ justify-content: center;
 min-height: 20px; /* גובה מינימלי אחיד */
 padding: 18px 24px;
 position: relative;}
-
+ 
 .banner .p {
 color: #ffffff;
 font-family: "Inter-SemiBold", Helvetica;
@@ -129,8 +129,8 @@ margin-top: -1.00px;
 position: relative;
 white-space: nowrap;
 width: fit-content;}
-
-
+ 
+ 
 .banner .div-wrapper-2 {
 cursor: pointer;
 border-color: var(--brandcolor-brand-grey-200);
@@ -144,9 +144,9 @@ justify-content: center;
 min-height: 20px; /* גובה מינימלי אחיד */
 padding: 18px 24px;
 position: relative;}
-
-
-
+ 
+ 
+ 
 .banner .text-wrapper-4 {
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-SemiBold", Helvetica;
@@ -158,15 +158,15 @@ margin-top: -1.00px;
 position: relative;
 white-space: nowrap;
 width: fit-content;}
-
-
-
-
+ 
+ 
+ 
+ 
 .banner .image-wrapper {
   flex: 1;
   border-radius: 26px;
-  padding: 16px; 
-  background: rgba(200, 200, 200, 0.15); 
+  padding: 16px;
+  background: rgba(200, 200, 200, 0.15);
   border: 1px solid rgba(180, 180, 180, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -179,7 +179,7 @@ width: fit-content;}
   width: 100%;
     max-width: 800px;  /* 👈 מגביל את הרוחב */
 }
-
+ 
 .banner .image {
 /* width: 560px;  
   height: auto;   */
@@ -189,7 +189,7 @@ width:  100%;
   position: relative;
   height: auto;
   object-fit: cover;
-  border-radius: 20px; 
+  border-radius: 20px;
   display: block;
   border: none; }
  .banner .div-wrapper:hover {
@@ -205,15 +205,15 @@ width:  100%;
   top: 18vh;
   width: 44.8vw;
   height: 44vh;
-
+ 
 }
 }
-
+ 
 @media (max-width: 1024px)  {
-    
+   
     /* הסתרת אלמנט ה-DotLottieReact */
     .element-phones {
-        display: none !important; 
+        display: none !important;
         position: static !important;
         left: 0 !important;
     }
@@ -230,7 +230,7 @@ width:  100%;
     width: 100%;
     text-align: center;
   }
-
+ 
   /* --- הכותרת הראשית --- */
   .banner .transform-your {
     text-align: center;
@@ -244,7 +244,7 @@ width:  100%;
     display: inline-block;
     width: 100%;
   }
-
+ 
   /* שבירה לשתי שורות */
   .banner .transform-your .text-wrapper {
     display: block; /* "Transform your" */
@@ -252,7 +252,7 @@ width:  100%;
   .banner .transform-your .span {
     display: block; /* "workflow all by phone" */
   }
-
+ 
   /* --- טקסט משני --- */
   .banner .build-powerful {
     text-align: center;
@@ -266,7 +266,7 @@ width:  100%;
     margin: 0 auto;
     margin-bottom: 40px; /* רווח בין טקסט לכפתורים */
   }
-
+ 
   /* --- כפתורים --- */
   .banner .div-4 {
     display: flex;
@@ -276,14 +276,14 @@ width:  100%;
     gap: 20px;
     margin-bottom: -80px; /* רווח בין כפתורים לתמונה */
   }
-
+ 
   .banner .div-wrapper,
   .banner .div-wrapper-2 {
     flex: 1;
     max-width: 250px;
   }
-
-
+ 
+ 
   .banner .image-wrapper{
     width: 100%;
     max-width: 700px;
@@ -291,24 +291,24 @@ width:  100%;
     display: block;
     text-align: center;
   }
-  
+ 
 }
 html, body {
   overflow-x: hidden;
 }
-
-
-
+ 
+ 
+ 
 /* -------------------768 */
 @media (max-width: 768px) and (min-width: 480px) {
-
+ 
     /* הסתרת אלמנט ה-DotLottieReact */
     .element-phones {
         display: none !important;
         position: static !important;
         left: 0 !important;
     }
-
+ 
     /* Banner */
     .banner {
         flex-direction: column;
@@ -316,7 +316,7 @@ html, body {
         padding: 0 40px; /* 40px מכל צד */
         box-sizing: border-box;
     }
-
+ 
     .banner .div {
         display: flex;
         flex-direction: column; /* אלמנטים אחד מתחת לשני */
@@ -327,7 +327,7 @@ html, body {
         padding: 0 40px; /* גם כאן 40px padding פנימי */
         box-sizing: border-box;
     }
-
+ 
     /* כותרת ראשית */
     .banner .transform-your {
         font-size: 48px; /* קצת קטן ממסך גדול */
@@ -337,12 +337,12 @@ html, body {
         display: inline-block;
         text-align: center;
     }
-
+ 
     .banner .transform-your .text-wrapper,
     .banner .transform-your .span {
         display: block;
     }
-
+ 
     /* טקסט משני */
     .banner .build-powerful {
         font-size: 20px;
@@ -351,7 +351,7 @@ html, body {
         text-align: center;
         line-height: 1.5;
     }
-
+ 
     /* כפתורים */
     .banner .div-4 {
         justify-content: center;
@@ -359,13 +359,13 @@ html, body {
         gap: 16px;
         margin-bottom: 0;
     }
-
+ 
     .banner .div-wrapper,
     .banner .div-wrapper-2 {
         max-width: 100%;
         width: 100%;
     }
-
+ 
     .banner .image-wrapper {
     display: block;
     margin-top: -80px ; /* מרכז אופקי + ריווח למעלה */
@@ -374,28 +374,28 @@ html, body {
     border: none;
      right: 10px;
     }
-
-
-
+ 
+ 
+ 
 }
-
-
+ 
+ 
 @media (max-width: 480px) {
-
+ 
     /* הסתרת אלמנט ה-DotLottieReact */
     .element-phones {
         display: none !important;
         position: static !important;
         left: 0 !important;
     }
-
+ 
     /* Banner */
     .banner {
         flex-direction: column;
         box-sizing: border-box;
         margin-left:0px;
     }
-
+ 
     .banner .div {
         display: flex;
         flex-direction: column; /* אלמנטים אחד מתחת לשני */
@@ -404,15 +404,15 @@ html, body {
         width: 100%;
         text-align: center;
         box-sizing: border-box;
-        padding: 0 20px; 
+        padding: 0 20px;
     }
-
+ 
     /* כותרת ראשית */
     .banner .transform-your {
         font-size:32px; /* קצת קטן ממסך גדול */
         margin-bottom: 16px;
         text-align: start;
-    }   
+    }  
      .banner .build-powerful {
         text-align:start;
         font-size:14px; /* קצת קטן ממסך גדול */
@@ -421,21 +421,21 @@ html, body {
     .banner .div-4 {
         flex-direction: column; /* אלמנטים אחד מתחת לשני */
     }
-
+ 
     .banner .div-wrapper,
     .banner .div-wrapper-2 {
         max-width: 100%;
         width: 100%;
         box-sizing: border-box;
     }
-
+ 
     .banner .image-wrapper
     {
       display: none !important;
         position: static !important;
         left: 0 !important;
     }
-
+ 
     .login-images-480
     {
         display: flex;
@@ -450,7 +450,7 @@ html, body {
         padding: 0 20px;    /* רווח מכל צד */
         box-sizing: border-box;
     }
-
+ 
     .person1 {
         width: 100%;               /* מתכווץ פרופורציונלית */
         height: auto;             /* מתכווץ בהתאם */
@@ -460,53 +460,53 @@ html, body {
         justify-content: center;
         align-items: center;
     }
-
+ 
     .person1-border1 {
         width: 30%;
         height: auto;
         aspect-ratio: 156 / 156;
         padding: 8px;
     }
-
+ 
     .person1-border2 {
         width: 85%;
         height: auto;
         aspect-ratio: 132 / 132;
         padding: 4px;
     }
-
+ 
     .person1 .img {
         width: 100%;
         height: auto;
         border-radius: 50%;
         object-fit: cover;
     }
-
+ 
     /* PERSON2 ו-PERSON3 - מתיישרים בשורה */
     .person-row {
         display: flex;
         width: 100%;
         justify-content: center;
     }
-
+ 
     .person2, .person3 {
       width: 100%;               /* מתכווץ פרופורציונלית */
         height: auto;             /* מתכווץ בהתאם */
         aspect-ratio: 247 / 255;  /* שומר על פרופורציות */
     }
-
+ 
     .person2-border1, .person3-border1 {
         width: 50%;
         height: auto;
         aspect-ratio: 104 / 104;
         padding: 4px;
     }
-
+ 
     .person2-border2, .person3-border2 {
         width: 90%;
         aspect-ratio: 94 / 94;
     }
-
+ 
     .person2 .img, .person3 .img {
         width: 100%;
         height: auto;
@@ -514,21 +514,100 @@ html, body {
         object-fit: cover;
     }
 }
-
+ 
 @media (max-width: 320px) {
     body
     {
       min-width: 100%;
     }
-
+ 
 }
 @media (max-width: 290px) {
      .banner .transform-your, .banner .div-wrapper-2,
     .banner .div-wrapper {
         width: 90%;
-    } 
+    }
 .banner .build-powerful
 {
         width: 90%;
 }
 }
+ 
+@media (max-width: 320px) {
+    body
+    {
+      min-width: 100%;
+    }
+ 
+}
+@media (max-width: 290px) {
+     .banner .transform-your, .banner .div-wrapper-2,
+    .banner .div-wrapper {
+        width: 90%;
+    }
+.banner .build-powerful
+{
+        width: 90%;
+}
+}
+ 
+
+
+/* @media (max-width: 1919px) and (min-width: 1750px) {
+  .banner .element-phones {
+    left: 58vw;
+    top: 10vh;
+    width: 42vw;
+    height: 36vh;
+  }
+}
+@media (max-width: 1749px) and (min-width: 1600px) {
+  .banner .element-phones {
+    left: 58vw;
+    top: 9vh;
+    width: 46vw;
+    height: 36vh;
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 1440px) {
+  .banner .element-phones {
+    left: 66vw;
+    top: 11vh;
+    width: 38vw;
+    height: 28vh;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1365px) and (min-width: 1280px) {
+  .banner .element-phones {
+    left: 74vw;
+    top: 12.5vh;
+    width: 34vw;
+    height: 22vh;
+  }
+}
+
+
+@media (max-width: 1279px) and (min-width: 1025px) {
+  .banner .element-phones {
+    left: 80vw;
+    top: 14vh;
+    width: 28vw;
+    height: 18vh;
+  }
+} */
+
+ /* @media (max-width: 1439px) and (min-width: 1366px) {
+  .banner .element-phones {
+    left: 72vw;
+    top: 12vh;
+    width: 32vw;
+    height: 22vh;
+  }
+}  */
