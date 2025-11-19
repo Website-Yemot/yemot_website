@@ -2,15 +2,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.64);
+    background: rgba(0, 0, 0, 0.35);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    width: 1915px;
-    height: 941px;
+    z-index: 9999;
     flex-shrink: 0;
-    aspect-ratio: 1915/941;
+    width: 100vw;
+    height: 100vh;
 }
 
 .popup {
@@ -104,4 +103,34 @@
 
 .popup-button:hover {
     background-color: #4b00b5;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90%;
+        max-width: 370px;
+        padding: 32px;
+        height: auto;
+    }
+
+    .a {
+        font-size: var(--popup-h2-font-size);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 90%;
+        max-width: 300px;
+        padding: 24px;
+        height: auto;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .a {
+        font-size: 26px;
+
+    }
 }

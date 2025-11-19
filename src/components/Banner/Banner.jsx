@@ -45,8 +45,8 @@ with unlimited core features and channels.
 </p>
 </div>
 <div className="div-4">
-<div className="div-wrapper">
-<div className="p" onClick={() => setShowCreateAccount(true)}>Build your free phone system</div>
+<div className="div-wrapper" onClick={() => setShowCreateAccount(true)}>
+<div className="p">Build your free phone system</div>
 </div>
 
 <div className="div-wrapper-2" onClick={() => setShowHire(true)}>

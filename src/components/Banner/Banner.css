@@ -106,6 +106,7 @@ justify-content: flex-start;
 } 
 
 .banner .div-wrapper {
+cursor: pointer;
 background-color: var(--brandcolor-brand-primary-400);
 align-items: center;
 border-radius: 32px;
@@ -118,7 +119,6 @@ padding: 18px 24px;
 position: relative;}
 
 .banner .p {
-   cursor: pointer;
 color: #ffffff;
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;
@@ -132,6 +132,7 @@ width: fit-content;}
 
 
 .banner .div-wrapper-2 {
+cursor: pointer;
 border-color: var(--brandcolor-brand-grey-200);
 align-items: center;
 border: 1px solid;
@@ -147,7 +148,6 @@ position: relative;}
 
 
 .banner .text-wrapper-4 {
-   cursor: pointer;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;

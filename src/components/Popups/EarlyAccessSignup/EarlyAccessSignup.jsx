@@ -6,7 +6,7 @@ export const EarlyAccessSignup = ({ onClose, onSubmit, extraButton }) => {
         onSubmit();
     };
     const handleOldAppRedirect = () => {
-        window.location.href = 'https://call2all.co.il/SignUp/init?configCode=ivr2_10_23&site=ymta';
+        window.location.href = 'https://www.call2all.co.il/SignUp/init?configCode=ivr2_US_11_25&site=ymta';
     };
     return (
         <div className="signup-overlay" onClick={onClose}>

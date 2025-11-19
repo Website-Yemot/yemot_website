@@ -105,8 +105,8 @@ export const AddOns = () => {
                                     And many other awesome add-ons for awesome phone systems
                                 </h3>
                             </div>
-                            <div className="btn">
-                                <a id="contact-btn" onClick={() => scrollToSection("support")}>Contact Support</a>
+                            <div className="btn" onClick={() => scrollToSection("support")}>
+                                <a id="contact-btn" >Contact Support</a>
                             </div>
                         </div>
                     </div>

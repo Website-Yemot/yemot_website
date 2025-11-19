@@ -97,6 +97,7 @@ justify-content: flex-end;
 position: relative;}
 
 .main-header .div-wrapper {
+cursor: pointer;
 align-items: flex-start;
 display: inline-flex;
 flex: 0 0 auto;
@@ -104,7 +105,6 @@ flex-direction: column;
 position: relative;}
 
 .main-header .text-wrapper-5 {
-cursor: pointer;
 align-self: stretch;
 color: var(--brandcolor-brand-black-white-black);
 font-family: "Inter-Medium", Helvetica;
@@ -116,6 +116,7 @@ margin-top: -1.00px;
 position: relative;}
 
 .main-header .div-wrapper-2 {
+cursor: pointer;
 align-items: center;
 background-color: var(--brandcolor-brand-primary-400);
 border-radius: 32px;
@@ -127,7 +128,7 @@ padding: 18px 24px;
 position: relative;}
 
 .main-header .text-wrapper-6 {
-   cursor: pointer;
+cursor: pointer;
 color: var(--brandcolor-brand-black-white-white);
 font-family: "Inter-SemiBold", Helvetica;
 font-size: 16px;

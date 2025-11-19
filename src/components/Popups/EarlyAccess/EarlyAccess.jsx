@@ -3,7 +3,7 @@ import './EarlyAccess.css';
 
 export const EarlyAccess = ({ onClose }) => {
     const handleRedirect = () => {
-        window.location.href = 'https://www.google.com/url?q=https%3A%2F%2Fcall2all.co.il%2FSignUp%2Finit%3FconfigCode%3Divr2_10_23%26site%3Dymta&sa=D&sntz=1&usg=AOvVaw13rFqO5uSbwqn-sfi9oU12';
+        window.location.href = 'https://www.call2all.co.il/SignUp/init?configCode=ivr2_US_11_25&site=ymta';
     };
 
     return (
