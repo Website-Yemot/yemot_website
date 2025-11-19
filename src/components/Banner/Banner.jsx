@@ -70,7 +70,7 @@ with unlimited core features and channels.
 </div>
 
 <div className="login-images-480">
-  <div className="login-images">
+  <div className="login-images2">
     <div className="person1">
         <div className="person1-border1">
             <div className='person1-border2'>

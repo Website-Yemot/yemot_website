@@ -15,7 +15,8 @@
       padding: 120px 20px 120px 20px;
       color: white;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif; /* שימוש בפונט רגיל כברירת מחדל */
+      font-family: Poppins;
+      font-style: normal;
       border-radius: 0;
     }
 
