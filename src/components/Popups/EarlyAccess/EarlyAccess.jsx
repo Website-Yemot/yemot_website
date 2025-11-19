@@ -9,7 +9,10 @@ export const EarlyAccess = ({ onClose }) => {
     return (
         <div className="popup-overlay" onClick={onClose}>
             <div className="popup" onClick={e => e.stopPropagation()}>
-                <img src="/XmarkPopups.svg" alt="close" id="XmarkPopups" onClick={onClose} />
+                <button className="hire-close" onClick={onClose} aria-label="Close">
+                    ✕
+                </button>
+
                 <div className="popup-icon">
                     <img src="/CheckmarkG.svg" alt="" id="CheckmarkG" />
                 </div>

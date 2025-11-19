@@ -371,6 +371,9 @@ display: flex;
   color: red;
   opacity: 1;
 }
+.login-button:hover{
+   background-color: var(--brandcolor-brand-primary-500);
+}
 
 @media (max-width: 1024px) {
 
@@ -407,7 +410,9 @@ display: none !important;
     right:0;
   }
 }
-
+.hire-close:hover{
+  background-color: #f0f0f0;;
+}
  @media (max-width: 480px) {
 
  

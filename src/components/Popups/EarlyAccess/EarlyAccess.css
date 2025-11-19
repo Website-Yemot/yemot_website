@@ -26,15 +26,6 @@
     position: relative;
 }
 
-#XmarkPopups {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
 .popup-icon {
     border-radius: 64px;
     background: var(--brandcolor-brand-accent-100);

@@ -11,7 +11,10 @@ export const EarlyAccessSignup = ({ onClose, onSubmit, extraButton }) => {
     return (
         <div className="signup-overlay" onClick={onClose}>
             <div className="signup-container" onClick={(e) => e.stopPropagation()}>
-                <img src="/XmarkPopups.svg" alt="close" id="XmarkPopups" onClick={onClose} />
+                <button className="hire-close" onClick={onClose} aria-label="Close">
+                    ✕
+                </button>
+
                 <div className="signup-content">
                     <div className="top">
                         <div className="signup-title">

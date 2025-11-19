@@ -203,6 +203,13 @@
     font-weight: 500;
     line-height: 21px;
 }
+#email-btn:hover {
+   background-color: #f0f0f0;
+}
+
+#whatsapp-btn:hover {
+   background-color: var(--brandcolor-brand-primary-500);
+  }
 
 @media (max-width: 1024px) {
     .support-containerA {

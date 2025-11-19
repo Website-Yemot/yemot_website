@@ -206,6 +206,9 @@
     align-self: stretch;
     text-align: left;
 }
+.btn:hover {
+    background-color: var(--brandcolor-brand-secondary-100);
+}
 
 @media (max-width: 1024px) {
 

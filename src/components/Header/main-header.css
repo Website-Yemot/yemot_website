@@ -200,6 +200,18 @@ width: fit-content;}
   pointer-events: auto;
 }
 
+.sidebar-item:hover{
+  color: var(--brandcolor-brand-primary-400);
+}
+.navbar > div:hover {
+  color: var(--brandcolor-brand-primary-400);
+}
+.text-wrapper-5:hover{
+    color: var(--brandcolor-brand-primary-400);
+}
+.main-header .div-wrapper-2:hover {
+background-color: var(--brandcolor-brand-primary-500);
+}
 
 @media (max-width: 1024px) {
   .navbar {

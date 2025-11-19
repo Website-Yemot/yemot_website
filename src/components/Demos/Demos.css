@@ -133,6 +133,7 @@ height: 90px;
 /* האייקון של הכרטיס */
 
 .icon-wrapper .vector {
+cursor: pointer;
 align-items: center;
 background-color: #e3d1ff;
 border-radius: 4px;
@@ -178,7 +179,9 @@ text-align: left;
         display: none !important;
 
   }
-
+.icon-wrapper .vector:hover{
+   background-color: #d6bfff;
+}
 @media (max-width: 1024px)  {
 
   .demos .build-any-phone-wrapper

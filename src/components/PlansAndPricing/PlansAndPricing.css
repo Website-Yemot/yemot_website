@@ -229,6 +229,14 @@
 #Checkmark {
     width: 20px;
 }
+#outlineDoneForYou:hover {
+    background: #f0f0f0;
+}
+
+#outlineBasic:hover,
+#outlinePro:hover {
+    background: var(--brandcolor-brand-secondary-500);
+}
 
 @media (max-width: 1024px) {
     .section-containerp {
