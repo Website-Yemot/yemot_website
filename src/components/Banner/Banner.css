@@ -536,8 +536,8 @@ html, body {
 }
 
 
-/* מסכים 1600px–1919px */
-@media (max-width: 1919px) and (min-width: 1750px) {
+
+/* @media (max-width: 1919px) and (min-width: 1750px) {
   .banner .element-phones {
     left: 58vw;
     top: 10vh;
@@ -554,7 +554,6 @@ html, body {
   }
 }
 
-/* מסכים 1440px–1599px */
 @media (max-width: 1599px) and (min-width: 1440px) {
   .banner .element-phones {
     left: 66vw;
@@ -565,7 +564,7 @@ html, body {
 }
 
 
-/* מסכים 1366px–1439px */
+
 @media (max-width: 1439px) and (min-width: 1366px) {
   .banner .element-phones {
     left: 72vw;
@@ -575,7 +574,7 @@ html, body {
   }
 }
 
-/* מסכים 1280px–1365px */
+
 @media (max-width: 1365px) and (min-width: 1280px) {
   .banner .element-phones {
     left: 74vw;
@@ -585,7 +584,7 @@ html, body {
   }
 }
 
-/* מסכים 1025px–1279px */
+
 @media (max-width: 1279px) and (min-width: 1025px) {
   .banner .element-phones {
     left: 80vw;
@@ -593,4 +592,4 @@ html, body {
     width: 28vw;
     height: 18vh;
   }
-}
+} */
