@@ -3,8 +3,9 @@ import { useState } from 'react';
 import person1 from '../Login/person1.png';
 import person2 from '../Login/person2.png';
 import person3 from '../Login/person3.png';
+import { EarlyAccessSignup } from '../EarlyAccessSignup/EarlyAccessSignup';
 
-export const Login = ({ onClose, onFirstLogin }) => {
+export const Login = ({ onClose, onFirstLogin,onOpenCreateAccount }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
@@ -55,7 +56,7 @@ export const Login = ({ onClose, onFirstLogin }) => {
             <p className="login-subtitle">
               <span className="login-text">Don't have an account?</span>
               <span className="login-separator">&nbsp;</span>
-              <span className="login-link">Create for free</span>
+              <span className="login-link" onClick={() => {onClose();onOpenCreateAccount();}} >Create for free</span>
             </p>
           </header>
 
@@ -173,6 +174,7 @@ export const Login = ({ onClose, onFirstLogin }) => {
                 </div>
               </div>
             </div>
+       
           </div>
         </div>
       </div>

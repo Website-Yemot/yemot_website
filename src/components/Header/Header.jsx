@@ -5,7 +5,6 @@ import { EarlyAccessSignup } from '../Popups/EarlyAccessSignup/EarlyAccessSignup
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
-  console.log("צצ",element)
   if (element) {
     
     element.scrollIntoView({ behavior: "smooth" });

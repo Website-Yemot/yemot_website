@@ -45,6 +45,8 @@ function App() {
       {showLogin && <Login id="login"
         onClose={() => setShowLogin(false)}
         onFirstLogin={handleLoginSuccess}
+          onOpenCreateAccount={() => setShowEarlyAccessSignup(true)}
+
       />
       }
       {showEarlyAccess && (

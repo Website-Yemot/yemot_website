@@ -54,7 +54,7 @@ flex: 1 1 50%;
 box-sizing: border-box;
 flex-direction: column;
 flex-grow: 1;
-gap: 32px;
+gap:32px;
 padding: 64px;
 position: relative;
 box-sizing: border-box;
@@ -80,7 +80,7 @@ font-style: var( --popup-h1-font-style);
 font-weight: var( --popup-h1-font-weight);
 letter-spacing: var( --popup-h1-letter-spacing);
 line-height: var( --popup-h1-line-height);
-margin-top: -30.00px;
+margin-top: -50.00px;
 position: relative;
 text-align: left;}
 
@@ -283,6 +283,24 @@ form {
 .button:hover{
     background-color: var(--brandcolor-brand-primary-500);
 }
+@media (min-width: 1024px) and (max-width: 1800px) {
+
+  .hire {
+    height: 600px !important;
+  }
+  .hire .left-side-hire {
+    gap:22px !important;
+
+  }
+  .hire .hire-header {
+    margin-top: -70.00px !important;
+
+  }
+
+
+}
+
+
 
 @media (max-width: 1024px)  {
 
